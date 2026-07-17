@@ -127,12 +127,13 @@ WEAPONS = {
 }
 
 TRAUMAS = {
-    'Сломанное ребро':  {'id': 65, 'desc': '-1 к вашим действиям'},
+    'Сломанное ребро':  {'id': 65, 'desc': '-1 К следующей серии'},
     'Грусть':           {'id': 66, 'desc': 'Сбросьте две верхние карты'},
-    'Головокружение':   {'id': 67, 'desc': '-1 усилие мозгов'},
-    'Обида':            {'id': 68, 'desc': '+1 к действиям соперника'},
-    'Исчерпание':       {'id': 69, 'desc': 'Замешайте 2 карты усталости в колоду'},
-    'Пьянство':         {'id': 70, 'desc': '-1 действие на перерыве'},
+    'Головокружение':   {'id': 67, 'desc': '-1 усилие мозгов (максимальное и текущее)'},
+    'Обида':            {'id': 68, 'desc': '+1 к следующей серии врага'},
+    'Истощение':        {'id': 69, 'desc': 'Замешайте 2 карты усталости в колоду'},
+    'Пьянство':         {'id': 70, 'desc': 'связанное с междудрачьем'},
+    'Рукоприкладство':  {'id': 71, 'desc': 'Нанесите 1 ранение оруженосцу'},
 }
 
 GITHUB_RAW = "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main"
@@ -140,19 +141,21 @@ CARD_IMAGES_DIR = GITHUB_RAW + "/card_images"
 TITLE_IMAGES_DIR = GITHUB_RAW + "/title_images"
 BACK_DIR = GITHUB_RAW + "/back_images"
 
-CARD_BACK = BACK_DIR + "/card_back.png"
-TITLE_BACK = BACK_DIR + "/title_back.png"
+V = "?v=7"
+
+CARD_BACK = BACK_DIR + "/card_back.png" + V
+TITLE_BACK = BACK_DIR + "/title_back.png" + V
 
 WEAPON_BACKS = {
-    'Меч':    BACK_DIR + "/back_mech.png",
-    'Лук':    BACK_DIR + "/back_luk.png",
-    'Секира': BACK_DIR + "/back_sekira.png",
-    'Копьё':  BACK_DIR + "/back_kopyo.png",
-    'Палица': BACK_DIR + "/back_palitsa.png",
+    'Меч':    BACK_DIR + "/back_mech.png" + V,
+    'Лук':    BACK_DIR + "/back_luk.png" + V,
+    'Секира': BACK_DIR + "/back_sekira.png" + V,
+    'Копьё':  BACK_DIR + "/back_kopyo.png" + V,
+    'Палица': BACK_DIR + "/back_palitsa.png" + V,
 }
 
-IDIOT_BACK = BACK_DIR + "/back_idiot.png"
-TRAUMA_BACK = BACK_DIR + "/back_trauma.png"
+IDIOT_BACK = BACK_DIR + "/back_idiot.png" + V
+TRAUMA_BACK = BACK_DIR + "/back_trauma.png" + V
 
 ASCII_MAP = {
     'Удар': 'udar', 'Сокрушение': 'sokrushenie', 'Блок': 'blok',
@@ -190,7 +193,8 @@ ASCII_MAP = {
     '5риключатель': 'pyatikluchatel', 'Готяночка': 'golyanochka', 'Мстюн': 'mstyun',
     'Сломанное ребро': 'slomannoe_rebro', 'Грусть': 'grust',
     'Головокружение': 'golovokrujene', 'Обида': 'obida',
-    'Пьянство': 'pyanstvo', 'Исчерпание': 'ischerpanie',
+    'Пьянство': 'pyanstvo', 'Истощение': 'ischerpanie',
+    'Рукоприкладство': 'rukoprikladstvo',
 }
 
 
@@ -200,12 +204,12 @@ def make_guid():
 
 def make_card_image_url(card_name):
     ascii_name = ASCII_MAP.get(card_name, card_name)
-    return f"{CARD_IMAGES_DIR}/{ascii_name}.png"
+    return f"{CARD_IMAGES_DIR}/{ascii_name}.png{V}"
 
 
 def make_title_image_url(title_name):
     ascii_name = ASCII_MAP.get(title_name, title_name)
-    return f"{TITLE_IMAGES_DIR}/{ascii_name}.png"
+    return f"{TITLE_IMAGES_DIR}/{ascii_name}.png{V}"
 
 
 def make_card(card_name, card_id):
@@ -362,7 +366,7 @@ def make_idiot_deck(nickname, position, description=''):
 
         if deck_key not in custom_deck:
             ascii_name = ASCII_MAP.get(idiot_name, idiot_name)
-            face_url = f"{CARD_IMAGES_DIR}/{ascii_name}.png"
+            face_url = f"{CARD_IMAGES_DIR}/{ascii_name}.png{V}"
             custom_deck[deck_key] = {
                 'FaceURL': face_url,
                 'BackURL': IDIOT_BACK,
@@ -414,7 +418,7 @@ def make_trauma_deck(nickname, position, description=''):
 
         if deck_key not in custom_deck:
             ascii_name = ASCII_MAP.get(trauma_name, trauma_name)
-            face_url = f"{CARD_IMAGES_DIR}/{ascii_name}.png"
+            face_url = f"{CARD_IMAGES_DIR}/{ascii_name}.png{V}"
             custom_deck[deck_key] = {
                 'FaceURL': face_url,
                 'BackURL': TRAUMA_BACK,
@@ -497,9 +501,9 @@ def generate_mod():
 
     objects.append(make_idiot_deck('Идиоты', [0, 1, 8], 'Оруженосец / Рыцарь — переверните карту'))
 
-    objects.append(make_trauma_deck('Травмы', [6, 1, 0], 'Сломанное ребро, Грусть, Головокружение, Обида, Пьянство'))
+    objects.append(make_trauma_deck('Травмы', [6, 1, 0], 'Сломанное ребро, Грусть, Головокружение, Обида, Пьянство, Рукоприкладство'))
 
-    token_face = BACK_DIR + "/token_slabak.png"
+    token_face = BACK_DIR + "/token_slabak.png" + V
     objects.append({
         'GUID': make_guid(),
         'Name': 'CustomToken',

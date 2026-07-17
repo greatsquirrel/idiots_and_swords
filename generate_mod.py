@@ -141,7 +141,7 @@ CARD_IMAGES_DIR = GITHUB_RAW + "/card_images"
 TITLE_IMAGES_DIR = GITHUB_RAW + "/title_images"
 BACK_DIR = GITHUB_RAW + "/back_images"
 
-V = "?v=7"
+V = "?v=8"
 
 CARD_BACK = BACK_DIR + "/card_back.png" + V
 TITLE_BACK = BACK_DIR + "/title_back.png" + V

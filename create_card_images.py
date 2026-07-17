@@ -2,18 +2,18 @@
 # -*- coding: utf-8 -*-
 """
 Генератор изображений карт v2 — Мечи и Идиоты
-Карты 300x420 (двусторонние — верх/низ как идиоты)
-Титулы 200x105, Травмы 200x200
+2x resolution for crisp rendering in TTS
 """
 
 from PIL import Image, ImageDraw, ImageFont
 import os
 import re
 
-CARD_W, CARD_H = 300, 420
+SCALE = 2
+CARD_W, CARD_H = 300 * SCALE, 420 * SCALE
 HALF = CARD_H // 2
-TITLE_W, TITLE_H = 200, 105
-TRAUMA_SIZE = 200
+TITLE_W, TITLE_H = 200 * SCALE, 105 * SCALE
+TRAUMA_SIZE = 200 * SCALE
 
 OUTPUT_DIR = r"D:\mod the tts\tts_mod\card_images"
 TITLES_DIR = r"D:\mod the tts\tts_mod\title_images"
@@ -209,6 +209,14 @@ def _calc_colored_w(text, font):
     return w
 
 
+def _draw_outlined(draw, text, x, y, font, fill=(255,255,255), outline=(0,0,0), width=2):
+    for dx in range(-width, width+1):
+        for dy in range(-width, width+1):
+            if dx or dy:
+                draw.text((x+dx, y+dy), text, fill=outline, font=font)
+    draw.text((x, y), text, fill=fill, font=font)
+
+
 def _draw_colored(draw, text, x, y, font, stroke=(0,0,0)):
     kw, pos = _find_first_kw(text)
     if kw is None:
@@ -218,9 +226,9 @@ def _draw_colored(draw, text, x, y, font, stroke=(0,0,0)):
         _draw_outlined(draw, text[:pos], x, y, font, (255,255,255), (60,60,60), 1)
         x += _text_w(text[:pos], font)
     info = FORMAT_WORDS[kw]
-    for dx in range(-2, 3):
-        for dy in range(-2, 3):
-            if dx * dx + dy * dy <= 4:
+    for dx in range(-2 * SCALE, 2 * SCALE + 1):
+        for dy in range(-2 * SCALE, 2 * SCALE + 1):
+            if dx * dx + dy * dy <= 4 * SCALE * SCALE:
                 draw.text((x + dx, y + dy), kw, fill=info['stroke'], font=font)
     draw.text((x, y), kw, fill=info['fill'], font=font)
     x += _text_w(kw, font)
@@ -234,7 +242,7 @@ def _has_colored(text):
 
 def _draw_text_block(draw, text, x, y, w, font, stroke=(0,0,0)):
     lines = _wrap(text, font, w)
-    line_h = font.size + 6
+    line_h = font.size + 6 * SCALE
     for i, line in enumerate(lines):
         if _has_colored(line):
             cw = _calc_colored_w(line, font)
@@ -250,9 +258,9 @@ def _draw_text_block(draw, text, x, y, w, font, stroke=(0,0,0)):
 def _draw_icon(draw, icon_type, cx, cy, size, color):
     s = size // 2
     if icon_type == 'Атака':
-        draw.line([(cx - s, cy + s), (cx, cy - s)], fill=color, width=3)
-        draw.line([(cx, cy - s), (cx + s, cy + s)], fill=color, width=3)
-        draw.line([(cx - s, cy - s // 2), (cx + s, cy - s // 2)], fill=color, width=2)
+        draw.line([(cx - s, cy + s), (cx, cy - s)], fill=color, width=3 * SCALE)
+        draw.line([(cx, cy - s), (cx + s, cy + s)], fill=color, width=3 * SCALE)
+        draw.line([(cx - s, cy - s // 2), (cx + s, cy - s // 2)], fill=color, width=2 * SCALE)
     elif icon_type == 'Защита':
         pts = [
             (cx, cy - s),
@@ -269,26 +277,15 @@ def _draw_icon(draw, icon_type, cx, cy, size, color):
 
 
 def _draw_main_lines(draw, x, y, w, color):
-    draw.line([(x, y), (x + w, y)], fill=color, width=3)
-    draw.line([(x, y + 7), (x + w, y + 7)], fill=color, width=3)
+    draw.line([(x, y), (x + w, y)], fill=color, width=3 * SCALE)
+    draw.line([(x, y + 7 * SCALE), (x + w, y + 7 * SCALE)], fill=color, width=3 * SCALE)
 
 
 def _draw_activation(draw, cx, cy, r=14):
-    draw.ellipse([cx - r, cy - r, cx + r, cy + r], fill=(220, 200, 40), outline=(180, 160, 30), width=2)
-    fnt = _get_font(16)
+    r = r * SCALE
+    draw.ellipse([cx - r, cy - r, cx + r, cy + r], fill=(220, 200, 40), outline=(180, 160, 30), width=2 * SCALE)
+    fnt = _get_font(16 * SCALE)
     draw.text((cx, cy), 'А', fill=(0, 0, 0), font=fnt, anchor='mm')
-
-
-def _draw_outlined(draw, text, x, y, font, fill=(255,255,255), outline=(0,0,0), width=2):
-    for dx in range(-width, width+1):
-        for dy in range(-width, width+1):
-            if dx or dy:
-                draw.text((x+dx, y+dy), text, fill=outline, font=font)
-    draw.text((x, y), text, fill=fill, font=font)
-
-
-def _glow_color(c):
-    return tuple(min(255, (a + 255) // 2) for a in c)
 
 
 def _render_half(draw, name, text, x0, y0, w, h, is_top, default_type='Атака'):
@@ -297,7 +294,7 @@ def _render_half(draw, name, text, x0, y0, w, h, is_top, default_type='Атак�
     stripe_color = TYPE_STRIPE.get(stype, (128, 128, 128))
     body_color = TYPE_BODY.get(stype, (230, 230, 230))
 
-    stripe_h = 48
+    stripe_h = 48 * SCALE
     if is_top:
         sy = y0
         by = y0 + stripe_h
@@ -311,29 +308,29 @@ def _render_half(draw, name, text, x0, y0, w, h, is_top, default_type='Атак�
 
     draw.rectangle([x0, sy, x0 + w, sy + stripe_h], fill=stripe_color)
 
-    font_name = _get_font(18, bold=True)
-    font_effect = _get_font(16)
+    font_name = _get_font(18 * SCALE, bold=True)
+    font_effect = _get_font(16 * SCALE)
 
     tw = _text_w(name, font_name)
     nx = x0 + (w - tw) // 2
-    ny = sy + (stripe_h - 18) // 2
-    _draw_outlined(draw, name, nx, ny, font_name, (255,255,255), (0,0,0), 2)
+    ny = sy + (stripe_h - 18 * SCALE) // 2
+    _draw_outlined(draw, name, nx, ny, font_name, (255,255,255), (0,0,0), 2 * SCALE)
 
-    _draw_icon(draw, stype, x0 + w - 26, sy + stripe_h // 2, 20, (255,255,255))
+    _draw_icon(draw, stype, x0 + w - 26 * SCALE, sy + stripe_h // 2, 20 * SCALE, (255,255,255))
 
     if 'Главная' in kws:
         if is_top:
-            _draw_main_lines(draw, x0 + 10, y0 + stripe_h - 8, 40, (255, 255, 255))
+            _draw_main_lines(draw, x0 + 10 * SCALE, y0 + stripe_h - 8 * SCALE, 40 * SCALE, (255, 255, 255))
         else:
-            _draw_main_lines(draw, x0 + w - 50, sy + stripe_h - 8, 40, (255, 255, 255))
+            _draw_main_lines(draw, x0 + w - 50 * SCALE, sy + stripe_h - 8 * SCALE, 40 * SCALE, (255, 255, 255))
 
     if effect:
-        pad = 14
-        _draw_text_block(draw, effect, x0 + pad, by + 10, w - pad * 2, font_effect, stripe_color)
+        pad = 14 * SCALE
+        _draw_text_block(draw, effect, x0 + pad, by + 10 * SCALE, w - pad * 2, font_effect, stripe_color)
 
     if 'Не отменяется' in text:
-        fnt = _get_font(11)
-        draw.text((x0 + w - 20, by + bh - 16), '\u2191', fill=(120, 40, 40), font=fnt)
+        fnt = _get_font(11 * SCALE)
+        draw.text((x0 + w - 20 * SCALE, by + bh - 16 * SCALE), '\u2191', fill=(120, 40, 40), font=fnt)
 
 
 def create_single_card(name, text):
@@ -346,26 +343,26 @@ def create_single_card(name, text):
     body_color = TYPE_BODY.get(stype, (230, 230, 230))
 
     draw.rectangle([0, 0, CARD_W, CARD_H], fill=body_color)
-    draw.rectangle([0, 0, CARD_W, 68], fill=stripe_color)
-    draw.rectangle([3, 3, CARD_W - 4, CARD_H - 4], outline=stripe_color, width=3)
+    draw.rectangle([0, 0, CARD_W, 68 * SCALE], fill=stripe_color)
+    draw.rectangle([3 * SCALE, 3 * SCALE, CARD_W - 4 * SCALE, CARD_H - 4 * SCALE], outline=stripe_color, width=3 * SCALE)
 
-    font_name = _get_font(24, bold=True)
-    font_effect = _get_font(18)
+    font_name = _get_font(24 * SCALE, bold=True)
+    font_effect = _get_font(18 * SCALE)
 
     tw = _text_w(name, font_name)
     nx = (CARD_W - tw) // 2
-    ny = 10
-    _draw_outlined(draw, name, nx, ny, font_name, (255,255,255), (0,0,0), 2)
+    ny = 10 * SCALE
+    _draw_outlined(draw, name, nx, ny, font_name, (255,255,255), (0,0,0), 2 * SCALE)
 
-    _draw_icon(draw, stype, CARD_W - 32, 34, 24, (255,255,255))
+    _draw_icon(draw, stype, CARD_W - 32 * SCALE, 34 * SCALE, 24 * SCALE, (255,255,255))
 
     if effect:
-        pad = 20
-        _draw_text_block(draw, effect, pad, 88, CARD_W - pad * 2, font_effect, stripe_color)
+        pad = 20 * SCALE
+        _draw_text_block(draw, effect, pad, 88 * SCALE, CARD_W - pad * 2, font_effect, stripe_color)
 
     if 'Не отменяется' in text:
-        fnt = _get_font(11)
-        draw.text((CARD_W - 22, CARD_H - 20), '\u2191', fill=(120, 40, 40), font=fnt)
+        fnt = _get_font(11 * SCALE)
+        draw.text((CARD_W - 22 * SCALE, CARD_H - 20 * SCALE), '\u2191', fill=(120, 40, 40), font=fnt)
 
     return img
 
@@ -383,7 +380,7 @@ def create_double_card(name, text_a, text_b):
     lower = lower.rotate(180)
     img.paste(lower, (0, HALF))
 
-    draw.line([(0, HALF - 1), (CARD_W, HALF - 1)], fill=(100, 100, 100), width=2)
+    draw.line([(0, HALF - 1), (CARD_W, HALF - 1)], fill=(100, 100, 100), width=2 * SCALE)
 
     return img
 
@@ -391,26 +388,26 @@ def create_double_card(name, text_a, text_b):
 def create_fatigue_card():
     img = Image.new('RGB', (CARD_W, CARD_H), (90, 85, 80))
     draw = ImageDraw.Draw(img)
-    draw.rectangle([4, 4, CARD_W - 5, CARD_H - 5], outline=(140, 130, 120), width=3)
+    draw.rectangle([4 * SCALE, 4 * SCALE, CARD_W - 5 * SCALE, CARD_H - 5 * SCALE], outline=(140, 130, 120), width=3 * SCALE)
 
-    draw.rectangle([10, 10, CARD_W - 10, 75], fill=(60, 55, 50))
-    font_title = _get_font(28, bold=True)
+    draw.rectangle([10 * SCALE, 10 * SCALE, CARD_W - 10 * SCALE, 75 * SCALE], fill=(60, 55, 50))
+    font_title = _get_font(28 * SCALE, bold=True)
     tw = _text_w('УСТАЛОСТЬ', font_title)
-    draw.text(((CARD_W - tw) // 2, 20), 'УСТАЛОСТЬ', fill=(200, 190, 170), font=font_title)
+    draw.text(((CARD_W - tw) // 2, 20 * SCALE), 'УСТАЛОСТЬ', fill=(200, 190, 170), font=font_title)
 
-    cx, cy = CARD_W // 2, CARD_H // 2 - 10
-    bw, bh = 60, 160
+    cx, cy = CARD_W // 2, CARD_H // 2 - 10 * SCALE
+    bw, bh = 60 * SCALE, 160 * SCALE
     draw.rectangle([cx - bw // 2, cy - bh // 2, cx + bw // 2, cy + bh // 2],
-                   fill=(140, 40, 40), outline=(180, 60, 60), width=2)
+                   fill=(140, 40, 40), outline=(180, 60, 60), width=2 * SCALE)
     draw.rectangle([cx - bh // 2, cy - bw // 2, cx + bh // 2, cy + bw // 2],
-                   fill=(140, 40, 40), outline=(180, 60, 60), width=2)
+                   fill=(140, 40, 40), outline=(180, 60, 60), width=2 * SCALE)
 
-    font_desc = _get_font(14)
+    font_desc = _get_font(14 * SCALE)
     lines = ['Замешивается', 'при перемешивании', 'Сбрасывает 1 карту сверху']
-    y_start = CARD_H - 120
+    y_start = CARD_H - 120 * SCALE
     for i, line in enumerate(lines):
         tw = _text_w(line, font_desc)
-        draw.text(((CARD_W - tw) // 2, y_start + i * 22), line, fill=(180, 170, 160), font=font_desc)
+        draw.text(((CARD_W - tw) // 2, y_start + i * 22 * SCALE), line, fill=(180, 170, 160), font=font_desc)
 
     return img
 
@@ -418,24 +415,24 @@ def create_fatigue_card():
 def create_title_card(name, description):
     img = Image.new('RGB', (TITLE_W, TITLE_H), (200, 170, 50))
     draw = ImageDraw.Draw(img)
-    draw.rectangle([2, 2, TITLE_W - 3, TITLE_H - 3], outline=(150, 120, 30), width=2)
+    draw.rectangle([2 * SCALE, 2 * SCALE, TITLE_W - 3 * SCALE, TITLE_H - 3 * SCALE], outline=(150, 120, 30), width=2 * SCALE)
 
-    font_name = _get_font(14, bold=True)
-    font_desc = _get_font(11)
+    font_name = _get_font(14 * SCALE, bold=True)
+    font_desc = _get_font(11 * SCALE)
 
     tw = _text_w(name, font_name)
     nx = (TITLE_W - tw) // 2
     for dx in (-1, 0, 1):
         for dy in (-1, 0, 1):
             if dx or dy:
-                draw.text((nx + dx, 4 + dy), name, fill=(20, 20, 20), font=font_name)
-    draw.text((nx, 4), name, fill=(255, 255, 255), font=font_name)
+                draw.text((nx + dx, 4 * SCALE + dy), name, fill=(20, 20, 20), font=font_name)
+    draw.text((nx, 4 * SCALE), name, fill=(255, 255, 255), font=font_name)
 
     lines = description.split('\n')
-    y_start = 26
+    y_start = 26 * SCALE
     for i, line in enumerate(lines):
         tw = _text_w(line, font_desc)
-        draw.text(((TITLE_W - tw) // 2, y_start + i * 16), line, fill=(40, 30, 10), font=font_desc)
+        draw.text(((TITLE_W - tw) // 2, y_start + i * 16 * SCALE), line, fill=(40, 30, 10), font=font_desc)
 
     return img
 
@@ -443,20 +440,20 @@ def create_title_card(name, description):
 def create_trauma_card(name, desc, color):
     img = Image.new('RGB', (TRAUMA_SIZE, TRAUMA_SIZE), color)
     draw = ImageDraw.Draw(img)
-    draw.rectangle([3, 3, TRAUMA_SIZE - 4, TRAUMA_SIZE - 4], outline=(140, 40, 40), width=2)
+    draw.rectangle([3 * SCALE, 3 * SCALE, TRAUMA_SIZE - 4 * SCALE, TRAUMA_SIZE - 4 * SCALE], outline=(140, 40, 40), width=2 * SCALE)
 
-    font_name = _get_font(18, bold=True)
-    font_desc = _get_font(14)
+    font_name = _get_font(18 * SCALE, bold=True)
+    font_desc = _get_font(14 * SCALE)
 
     tw = _text_w(name, font_name)
-    draw.text(((TRAUMA_SIZE - tw) // 2, 15), name, fill=(220, 180, 180), font=font_name)
+    draw.text(((TRAUMA_SIZE - tw) // 2, 15 * SCALE), name, fill=(220, 180, 180), font=font_name)
 
-    draw.line([(20, 45), (TRAUMA_SIZE - 20, 45)], fill=(140, 60, 60), width=1)
+    draw.line([(20 * SCALE, 45 * SCALE), (TRAUMA_SIZE - 20 * SCALE, 45 * SCALE)], fill=(140, 60, 60), width=1 * SCALE)
 
     lines = desc.split('\n')
-    line_h = 20
+    line_h = 20 * SCALE
     total_h = len(lines) * line_h
-    y_start = (TRAUMA_SIZE - total_h) // 2 + 15
+    y_start = (TRAUMA_SIZE - total_h) // 2 + 15 * SCALE
     for i, line in enumerate(lines):
         tw = _text_w(line, font_desc)
         draw.text(((TRAUMA_SIZE - tw) // 2, y_start + i * line_h), line, fill=(200, 200, 200), font=font_desc)
@@ -471,32 +468,34 @@ def create_card_back():
     img = Image.new('RGB', (w, h), bg)
     draw = ImageDraw.Draw(img)
 
-    for y_step in range(0, h, 30):
-        for x_step in range(0, w, 30):
+    step = 30 * SCALE
+    for y_step in range(0, h, step):
+        for x_step in range(0, w, step):
             c = tuple(min(255, c + 15) for c in bg)
-            draw.polygon([(x_step + 15, y_step), (x_step + 30, y_step + 15),
-                          (x_step + 15, y_step + 30), (x_step, y_step + 15)], outline=c)
+            draw.polygon([(x_step + step // 2, y_step), (x_step + step, y_step + step // 2),
+                          (x_step + step // 2, y_step + step), (x_step, y_step + step // 2)], outline=c)
 
-    draw.rectangle([5, 5, w - 6, h - 6], outline=gold, width=3)
-    draw.rectangle([10, 10, w - 11, h - 11], outline=gold, width=2)
+    draw.rectangle([5 * SCALE, 5 * SCALE, w - 6 * SCALE, h - 6 * SCALE], outline=gold, width=3 * SCALE)
+    draw.rectangle([10 * SCALE, 10 * SCALE, w - 11 * SCALE, h - 11 * SCALE], outline=gold, width=2 * SCALE)
 
-    cx, cy = w // 2, 155
+    cx, cy = w // 2, 155 * SCALE
+    s = SCALE
     shield_pts = [
-        (cx, cy - 70), (cx + 60, cy - 45), (cx + 50, cy + 40),
-        (cx, cy + 70), (cx - 50, cy + 40), (cx - 60, cy - 45),
+        (cx, cy - 70 * s), (cx + 60 * s, cy - 45 * s), (cx + 50 * s, cy + 40 * s),
+        (cx, cy + 70 * s), (cx - 50 * s, cy + 40 * s), (cx - 60 * s, cy - 45 * s),
     ]
-    draw.polygon(shield_pts, fill=(120, 25, 25), outline=gold, width=2)
+    draw.polygon(shield_pts, fill=(120, 25, 25), outline=gold, width=2 * SCALE)
 
-    draw.line([(cx, cy - 55), (cx, cy + 50)], fill=(200, 190, 170), width=4)
-    draw.polygon([(cx - 5, cy + 50), (cx + 5, cy + 50), (cx, cy + 62)], fill=(200, 190, 170))
-    draw.ellipse([cx - 6, cy - 62, cx + 6, cy - 50], fill=gold, outline=gold)
-    draw.line([(cx - 25, cy - 20), (cx + 25, cy - 20)], fill=gold, width=4)
-    draw.rectangle([cx - 3, cy - 20, cx + 3, cy + 10], fill=(100, 70, 30))
+    draw.line([(cx, cy - 55 * s), (cx, cy + 50 * s)], fill=(200, 190, 170), width=4 * SCALE)
+    draw.polygon([(cx - 5 * s, cy + 50 * s), (cx + 5 * s, cy + 50 * s), (cx, cy + 62 * s)], fill=(200, 190, 170))
+    draw.ellipse([cx - 6 * s, cy - 62 * s, cx + 6 * s, cy - 50 * s], fill=gold, outline=gold)
+    draw.line([(cx - 25 * s, cy - 20 * s), (cx + 25 * s, cy - 20 * s)], fill=gold, width=4 * SCALE)
+    draw.rectangle([cx - 3 * s, cy - 20 * s, cx + 3 * s, cy + 10 * s], fill=(100, 70, 30))
 
-    font = _get_font(26, bold=True)
+    font = _get_font(26 * SCALE, bold=True)
     label = '\u041c\u0415\u0427\u0418 \u0418 \u0418\u0414\u0418\u041e\u0422\u042b'
     tw = _text_w(label, font)
-    draw.text(((w - tw) / 2, 310), label, fill=gold, font=font)
+    draw.text(((w - tw) / 2, 310 * SCALE), label, fill=gold, font=font)
 
     return img
 
@@ -504,18 +503,18 @@ def create_card_back():
 def create_trauma_back():
     img = Image.new('RGB', (TRAUMA_SIZE, TRAUMA_SIZE), (40, 20, 20))
     draw = ImageDraw.Draw(img)
-    draw.rectangle([3, 3, TRAUMA_SIZE - 4, TRAUMA_SIZE - 4], outline=(120, 40, 40), width=2)
+    draw.rectangle([3 * SCALE, 3 * SCALE, TRAUMA_SIZE - 4 * SCALE, TRAUMA_SIZE - 4 * SCALE], outline=(120, 40, 40), width=2 * SCALE)
 
     cx, cy = TRAUMA_SIZE // 2, TRAUMA_SIZE // 2
-    bw, bh = 30, 80
+    bw, bh = 30 * SCALE, 80 * SCALE
     draw.rectangle([cx - bw // 2, cy - bh // 2, cx + bw // 2, cy + bh // 2],
-                   fill=(140, 40, 40), outline=(180, 60, 60), width=2)
+                   fill=(140, 40, 40), outline=(180, 60, 60), width=2 * SCALE)
     draw.rectangle([cx - bh // 2, cy - bw // 2, cx + bh // 2, cy + bw // 2],
-                   fill=(140, 40, 40), outline=(180, 60, 60), width=2)
+                   fill=(140, 40, 40), outline=(180, 60, 60), width=2 * SCALE)
 
-    font = _get_font(14)
+    font = _get_font(14 * SCALE)
     tw = _text_w('ТРАВМА', font)
-    draw.text(((TRAUMA_SIZE - tw) // 2, TRAUMA_SIZE - 30), 'ТРАВМА', fill=(160, 80, 80), font=font)
+    draw.text(((TRAUMA_SIZE - tw) // 2, TRAUMA_SIZE - 30 * SCALE), 'ТРАВМА', fill=(160, 80, 80), font=font)
 
     return img
 

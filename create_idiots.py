@@ -2,6 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 Генератор карт Идиотов для Мечи и Идиоты v2
+2x resolution for crisp rendering in TTS
 Карта разделена верх/низ: рыцарь | оруженосец
 """
 
@@ -11,7 +12,8 @@ import os
 OUTPUT_DIR = r"D:\mod the tts\tts_mod\card_images"
 BACK_DIR = r"D:\mod the tts\tts_mod\back_images"
 
-W, H = 300, 420
+SCALE = 2
+W, H = 300 * SCALE, 420 * SCALE
 HALF = H // 2
 
 IDIOTS = {
@@ -138,8 +140,8 @@ def _draw_centered(draw, text, cx, y, font, fill, outline=None):
     tw = _text_w(text, font)
     x = cx - tw // 2
     if outline:
-        for dx in (-1, 0, 1):
-            for dy in (-1, 0, 1):
+        for dx in (-SCALE, 0, SCALE):
+            for dy in (-SCALE, 0, SCALE):
                 if dx or dy:
                     draw.text((x + dx, y + dy), text, fill=outline, font=font)
     draw.text((x, y), text, fill=fill, font=font)
@@ -149,9 +151,10 @@ def create_idiot_face(name, info):
     img = Image.new('RGB', (W, H), (30, 30, 35))
     draw = ImageDraw.Draw(img)
 
-    font_name = _get_font(18, bold=True)
-    font_label = _get_font(14, bold=True)
-    font_desc = _get_font(13)
+    s = SCALE
+    font_name = _get_font(18 * s, bold=True)
+    font_label = _get_font(14 * s, bold=True)
+    font_desc = _get_font(13 * s)
 
     color = info['color']
     lighter = tuple(min(255, c + 40) for c in color)
@@ -159,46 +162,46 @@ def create_idiot_face(name, info):
 
     # === ВЕРХ — РЫЦАРЬ ===
     draw.rectangle([0, 0, W, HALF - 1], fill=color)
-    draw.rectangle([3, 3, W - 4, HALF - 4], outline=lighter, width=2)
+    draw.rectangle([3*s, 3*s, W - 4*s, HALF - 4*s], outline=lighter, width=2*s)
 
-    _draw_centered(draw, 'РЫЦАРЬ', cx, 8, font_label, lighter, (0, 0, 0))
-    _draw_centered(draw, name, cx, 28, font_name, (255, 255, 255), (0, 0, 0))
+    _draw_centered(draw, 'РЫЦАРЬ', cx, 8*s, font_label, lighter, (0, 0, 0))
+    _draw_centered(draw, name, cx, 28*s, font_name, (255, 255, 255), (0, 0, 0))
 
     # Мозги
     cost = info['cost']
-    brain_size = 12
-    gap = 4
+    brain_size = 12 * s
+    gap = 4 * s
     total_w = cost * brain_size + (cost - 1) * gap
     x_start = (W - total_w) // 2
-    y_brain = 53
+    y_brain = 53 * s
     for i in range(cost):
         bx = x_start + i * (brain_size + gap)
         draw.ellipse([bx, y_brain, bx + brain_size, y_brain + brain_size],
-                     fill=(220, 180, 60), outline=(180, 140, 30), width=1)
-        draw.line([(bx + brain_size // 2, y_brain + 2),
-                   (bx + brain_size // 2, y_brain + brain_size - 2)],
-                  fill=(180, 140, 30), width=1)
+                     fill=(220, 180, 60), outline=(180, 140, 30), width=s)
+        draw.line([(bx + brain_size // 2, y_brain + 2*s),
+                   (bx + brain_size // 2, y_brain + brain_size - 2*s)],
+                  fill=(180, 140, 30), width=s)
 
     lines = info['knight'].split('\n')
-    line_h = 16
+    line_h = 16 * s
     total_h = len(lines) * line_h
-    y_start = HALF - 10 - total_h
+    y_start = HALF - 10 * s - total_h
     for i, line in enumerate(lines):
         tw = _text_w(line, font_desc)
         draw.text(((W - tw) // 2, y_start + i * line_h), line, fill=(255, 255, 255), font=font_desc)
 
     # === НИЗ — ОРУЖЕНОСЕЦ ===
-    draw.rectangle([0, HALF, W, H - 3], fill=(30, 30, 35))
-    draw.rectangle([3, HALF + 3, W - 4, H - 4], outline=lighter, width=2)
+    draw.rectangle([0, HALF, W, H - 3*s], fill=(30, 30, 35))
+    draw.rectangle([3*s, HALF + 3*s, W - 4*s, H - 4*s], outline=lighter, width=2*s)
 
     squire_lines = info['squire'].split('\n')
-    y_start = HALF + 15
+    y_start = HALF + 15 * s
     for i, line in enumerate(squire_lines):
         tw = _text_w(line, font_desc)
         draw.text(((W - tw) // 2, y_start + i * line_h), line, fill=(255, 255, 255), font=font_desc)
 
-    _draw_centered(draw, name, cx, H - 48, font_name, (255, 255, 255), (0, 0, 0))
-    _draw_centered(draw, 'ОРУЖЕНОСЕЦ', cx, H - 24, font_label, lighter, (0, 0, 0))
+    _draw_centered(draw, name, cx, H - 48 * s, font_name, (255, 255, 255), (0, 0, 0))
+    _draw_centered(draw, 'ОРУЖЕНОСЕЦ', cx, H - 24 * s, font_label, lighter, (0, 0, 0))
 
     lower = img.crop((0, HALF, W, H))
     lower = lower.rotate(180)
@@ -211,23 +214,25 @@ def create_idiot_back():
     img = Image.new('RGB', (W, H), (45, 40, 50))
     draw = ImageDraw.Draw(img)
 
-    for y in range(0, H, 25):
-        for x in range(0, W, 25):
-            c = (55, 50, 60) if (x // 25 + y // 25) % 2 == 0 else (45, 40, 50)
-            draw.rectangle([x, y, x + 24, y + 24], fill=c)
+    s = SCALE
+    step = 25 * s
+    for y in range(0, H, step):
+        for x in range(0, W, step):
+            c = (55, 50, 60) if (x // step + y // step) % 2 == 0 else (45, 40, 50)
+            draw.rectangle([x, y, x + step - 1*s, y + step - 1*s], fill=c)
 
-    draw.rectangle([4, 4, W - 5, H - 5], outline=(100, 90, 110), width=3)
-    draw.rectangle([8, 8, W - 9, H - 9], outline=(70, 65, 80), width=2)
+    draw.rectangle([4*s, 4*s, W - 5*s, H - 5*s], outline=(100, 90, 110), width=3*s)
+    draw.rectangle([8*s, 8*s, W - 9*s, H - 9*s], outline=(70, 65, 80), width=2*s)
 
-    cx, cy = W // 2, H // 2 - 30
-    font_face = _get_font(60)
-    font_text = _get_font(28, bold=True)
+    cx, cy = W // 2, H // 2 - 30 * s
+    font_face = _get_font(60 * s)
+    font_text = _get_font(28 * s, bold=True)
 
-    draw.text((cx - 50, cy - 40), '^', fill=(180, 170, 140), font=font_face)
-    draw.text((cx + 20, cy - 40), '^', fill=(180, 170, 140), font=font_face)
-    draw.text((cx - 25, cy + 20), '_', fill=(180, 170, 140), font=font_face)
+    draw.text((cx - 50*s, cy - 40*s), '^', fill=(180, 170, 140), font=font_face)
+    draw.text((cx + 20*s, cy - 40*s), '^', fill=(180, 170, 140), font=font_face)
+    draw.text((cx - 25*s, cy + 20*s), '_', fill=(180, 170, 140), font=font_face)
 
-    _draw_centered(draw, 'ИДИОТ', cx, H - 60, font_text, (120, 110, 130))
+    _draw_centered(draw, 'ИДИОТ', cx, H - 60 * s, font_text, (120, 110, 130))
 
     return img
 

@@ -220,15 +220,15 @@ def _draw_outlined(draw, text, x, y, font, fill=(255,255,255), outline=(0,0,0), 
 def _draw_colored(draw, text, x, y, font, stroke=(0,0,0)):
     kw, pos = _find_first_kw(text)
     if kw is None:
-        _draw_outlined(draw, text, x, y, font, (255,255,255), (60,60,60), 1)
+        _draw_outlined(draw, text, x, y, font, (255,255,255), (0,0,0), 2)
         return
     if pos > 0:
-        _draw_outlined(draw, text[:pos], x, y, font, (255,255,255), (60,60,60), 1)
+        _draw_outlined(draw, text[:pos], x, y, font, (255,255,255), (0,0,0), 2)
         x += _text_w(text[:pos], font)
     info = FORMAT_WORDS[kw]
     for dx in range(-2 * SCALE, 2 * SCALE + 1):
         for dy in range(-2 * SCALE, 2 * SCALE + 1):
-            if dx * dx + dy * dy <= 4 * SCALE * SCALE:
+            if dx * dx + dy * dy <= (3 * SCALE) * (3 * SCALE):
                 draw.text((x + dx, y + dy), kw, fill=info['stroke'], font=font)
     draw.text((x, y), kw, fill=info['fill'], font=font)
     x += _text_w(kw, font)
@@ -251,7 +251,7 @@ def _draw_text_block(draw, text, x, y, w, font, stroke=(0,0,0)):
         else:
             tw = _text_w(line, font)
             lx = x + (w - tw) // 2
-            _draw_outlined(draw, line, lx, y + i * line_h, font, (255,255,255), (60,60,60), 1)
+            _draw_outlined(draw, line, lx, y + i * line_h, font, (255,255,255), (0,0,0), 2)
     return len(lines) * line_h
 
 
@@ -308,8 +308,8 @@ def _render_half(draw, name, text, x0, y0, w, h, is_top, default_type='Атак�
 
     draw.rectangle([x0, sy, x0 + w, sy + stripe_h], fill=stripe_color)
 
-    font_name = _get_font(18 * SCALE, bold=True)
-    font_effect = _get_font(16 * SCALE)
+    font_name = _get_font(20 * SCALE, bold=True)
+    font_effect = _get_font(18 * SCALE)
 
     tw = _text_w(name, font_name)
     nx = x0 + (w - tw) // 2
@@ -346,8 +346,8 @@ def create_single_card(name, text):
     draw.rectangle([0, 0, CARD_W, 68 * SCALE], fill=stripe_color)
     draw.rectangle([3 * SCALE, 3 * SCALE, CARD_W - 4 * SCALE, CARD_H - 4 * SCALE], outline=stripe_color, width=3 * SCALE)
 
-    font_name = _get_font(24 * SCALE, bold=True)
-    font_effect = _get_font(18 * SCALE)
+    font_name = _get_font(26 * SCALE, bold=True)
+    font_effect = _get_font(20 * SCALE)
 
     tw = _text_w(name, font_name)
     nx = (CARD_W - tw) // 2

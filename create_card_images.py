@@ -334,8 +334,8 @@ def _render_half(img, draw, name, text, x0, y0, w, h, is_top, default_type='Ат
     _draw_icon(draw, stype, x0 + w - 26 * SCALE, sy + stripe_h // 2, 20 * SCALE, (255,255,255))
 
     if 'Главная' in kws:
-        line_h = bh - 20 * SCALE
-        line_y = by + 10 * SCALE
+        line_h = stripe_h - 10 * SCALE
+        line_y = sy + 5 * SCALE
         if is_top:
             _draw_main_lines(draw, x0 + 10 * SCALE, line_y, line_h)
         else:

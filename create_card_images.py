@@ -8,6 +8,7 @@
 from PIL import Image, ImageDraw, ImageFont
 import os
 import re
+import numpy as np
 
 SCALE = 2
 CARD_W, CARD_H = 300 * SCALE, 420 * SCALE
@@ -130,6 +131,14 @@ def _get_font(size, bold=False):
         return ImageFont.truetype("arial.ttf", size)
     except:
         return ImageFont.load_default()
+
+
+def _draw_noise_rect(img, x0, y0, w, h, base_color, sigma=8):
+    arr = np.full((h, w, 3), base_color, dtype=np.int16)
+    noise = np.random.normal(0, sigma, (h, w, 3)).astype(np.int16)
+    arr = np.clip(arr + noise, 0, 255).astype(np.uint8)
+    bg = Image.fromarray(arr, 'RGB')
+    img.paste(bg, (x0, y0))
 
 
 def _text_w(text, font):
@@ -276,9 +285,15 @@ def _draw_icon(draw, icon_type, cx, cy, size, color):
         draw.rectangle([cx - s // 3, cy, cx + s // 2, cy + s // 3], fill=color, outline=color)
 
 
-def _draw_main_lines(draw, x, y, w, color):
-    draw.line([(x, y), (x + w, y)], fill=color, width=3 * SCALE)
-    draw.line([(x, y + 7 * SCALE), (x + w, y + 7 * SCALE)], fill=color, width=3 * SCALE)
+def _draw_main_lines(draw, x, y, h):
+    gap = 8 * SCALE
+    lw = 4 * SCALE
+    for offset in (0, gap):
+        lx = x + offset
+        draw.line([(lx, y), (lx, y + h)], fill=(0, 0, 0), width=lw + 4)
+    for offset in (0, gap):
+        lx = x + offset
+        draw.line([(lx, y), (lx, y + h)], fill=(255, 200, 0), width=lw)
 
 
 def _draw_activation(draw, cx, cy, r=14):
@@ -288,7 +303,7 @@ def _draw_activation(draw, cx, cy, r=14):
     draw.text((cx, cy), 'А', fill=(0, 0, 0), font=fnt, anchor='mm')
 
 
-def _render_half(draw, name, text, x0, y0, w, h, is_top, default_type='Атака'):
+def _render_half(img, draw, name, text, x0, y0, w, h, is_top, default_type='Атака'):
     kws, effect = _parse_text(text)
     stype = _get_side_type(text) or default_type
     stripe_color = TYPE_STRIPE.get(stype, (128, 128, 128))
@@ -304,7 +319,7 @@ def _render_half(draw, name, text, x0, y0, w, h, is_top, default_type='Атак�
         by = y0 + stripe_h
         bh = h - stripe_h
 
-    draw.rectangle([x0, by, x0 + w, by + bh], fill=body_color)
+    _draw_noise_rect(img, x0, by, w, bh, body_color, sigma=8)
 
     draw.rectangle([x0, sy, x0 + w, sy + stripe_h], fill=stripe_color)
 
@@ -319,10 +334,12 @@ def _render_half(draw, name, text, x0, y0, w, h, is_top, default_type='Атак�
     _draw_icon(draw, stype, x0 + w - 26 * SCALE, sy + stripe_h // 2, 20 * SCALE, (255,255,255))
 
     if 'Главная' in kws:
+        line_h = bh - 20 * SCALE
+        line_y = by + 10 * SCALE
         if is_top:
-            _draw_main_lines(draw, x0 + 10 * SCALE, y0 + stripe_h - 8 * SCALE, 40 * SCALE, (255, 255, 255))
+            _draw_main_lines(draw, x0 + 10 * SCALE, line_y, line_h)
         else:
-            _draw_main_lines(draw, x0 + w - 50 * SCALE, sy + stripe_h - 8 * SCALE, 40 * SCALE, (255, 255, 255))
+            _draw_main_lines(draw, x0 + w - 22 * SCALE, line_y, line_h)
 
     if effect:
         pad = 14 * SCALE
@@ -342,7 +359,7 @@ def create_single_card(name, text):
     stripe_color = TYPE_STRIPE.get(stype, (128, 128, 128))
     body_color = TYPE_BODY.get(stype, (230, 230, 230))
 
-    draw.rectangle([0, 0, CARD_W, CARD_H], fill=body_color)
+    _draw_noise_rect(img, 0, 68 * SCALE, CARD_W, CARD_H - 68 * SCALE, body_color, sigma=8)
     draw.rectangle([0, 0, CARD_W, 68 * SCALE], fill=stripe_color)
     draw.rectangle([3 * SCALE, 3 * SCALE, CARD_W - 4 * SCALE, CARD_H - 4 * SCALE], outline=stripe_color, width=3 * SCALE)
 
@@ -371,12 +388,12 @@ def create_double_card(name, text_a, text_b):
     img = Image.new('RGB', (CARD_W, CARD_H), (200, 200, 200))
     draw = ImageDraw.Draw(img)
 
-    _render_half(draw, name, text_a, 0, 0, CARD_W, HALF, is_top=True)
+    _render_half(img, draw, name, text_a, 0, 0, CARD_W, HALF, is_top=True)
 
     default_b = _get_side_type(text_a) or 'Атака'
     lower = Image.new('RGB', (CARD_W, HALF), (200, 200, 200))
     draw_lower = ImageDraw.Draw(lower)
-    _render_half(draw_lower, name, text_b, 0, 0, CARD_W, HALF, is_top=False, default_type=default_b)
+    _render_half(lower, draw_lower, name, text_b, 0, 0, CARD_W, HALF, is_top=False, default_type=default_b)
     lower = lower.rotate(180)
     img.paste(lower, (0, HALF))
 

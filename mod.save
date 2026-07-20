@@ -1,0 +1,3563 @@
+{
+  "SaveName": "Мечи и Идиоты",
+  "GameMode": "None",
+  "ObjectStates": [
+    {
+      "GUID": "588FA1504025",
+      "Name": "DeckCustom",
+      "IsHidden": true,
+      "Transform": {
+        "posX": -2,
+        "posY": 1,
+        "posZ": 0,
+        "rotX": 0,
+        "rotY": 180,
+        "rotZ": 180,
+        "scaleX": 1,
+        "scaleY": 1,
+        "scaleZ": 1
+      },
+      "Nickname": "Базовые карты",
+      "Description": "Удар, Сокрушение, Блок, Парирование, Уклонение, Финт, Отход",
+      "CustomDeck": {
+        "1": {
+          "FaceURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/card_images/udar.png?v=1784535043",
+          "BackURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/back_images/card_back.png?v=1784535043",
+          "NumWidth": 1,
+          "NumHeight": 1,
+          "BackIsHidden": true,
+          "UniqueBack": false
+        },
+        "2": {
+          "FaceURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/card_images/sokrushenie.png?v=1784535043",
+          "BackURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/back_images/card_back.png?v=1784535043",
+          "NumWidth": 1,
+          "NumHeight": 1,
+          "BackIsHidden": true,
+          "UniqueBack": false
+        },
+        "3": {
+          "FaceURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/card_images/blok.png?v=1784535043",
+          "BackURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/back_images/card_back.png?v=1784535043",
+          "NumWidth": 1,
+          "NumHeight": 1,
+          "BackIsHidden": true,
+          "UniqueBack": false
+        },
+        "4": {
+          "FaceURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/card_images/parirovanie.png?v=1784535043",
+          "BackURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/back_images/card_back.png?v=1784535043",
+          "NumWidth": 1,
+          "NumHeight": 1,
+          "BackIsHidden": true,
+          "UniqueBack": false
+        },
+        "5": {
+          "FaceURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/card_images/uklonenie.png?v=1784535043",
+          "BackURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/back_images/card_back.png?v=1784535043",
+          "NumWidth": 1,
+          "NumHeight": 1,
+          "BackIsHidden": true,
+          "UniqueBack": false
+        },
+        "6": {
+          "FaceURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/card_images/fint.png?v=1784535043",
+          "BackURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/back_images/card_back.png?v=1784535043",
+          "NumWidth": 1,
+          "NumHeight": 1,
+          "BackIsHidden": true,
+          "UniqueBack": false
+        },
+        "7": {
+          "FaceURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/card_images/otkhod.png?v=1784535043",
+          "BackURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/back_images/card_back.png?v=1784535043",
+          "NumWidth": 1,
+          "NumHeight": 1,
+          "BackIsHidden": true,
+          "UniqueBack": false
+        }
+      },
+      "DeckIDs": [
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        200,
+        200,
+        200,
+        200,
+        300,
+        300,
+        300,
+        300,
+        400,
+        400,
+        500,
+        500,
+        600,
+        600,
+        700,
+        700
+      ],
+      "ContainedObjects": [
+        {
+          "GUID": "D8511971BDC9",
+          "Name": "Card",
+          "CardID": 100,
+          "Nickname": "Удар",
+          "Description": "Атака",
+          "XML": "",
+          "LuaScript": "",
+          "Transform": {}
+        },
+        {
+          "GUID": "D8511971BDC9",
+          "Name": "Card",
+          "CardID": 100,
+          "Nickname": "Удар",
+          "Description": "Атака",
+          "XML": "",
+          "LuaScript": "",
+          "Transform": {}
+        },
+        {
+          "GUID": "D8511971BDC9",
+          "Name": "Card",
+          "CardID": 100,
+          "Nickname": "Удар",
+          "Description": "Атака",
+          "XML": "",
+          "LuaScript": "",
+          "Transform": {}
+        },
+        {
+          "GUID": "D8511971BDC9",
+          "Name": "Card",
+          "CardID": 100,
+          "Nickname": "Удар",
+          "Description": "Атака",
+          "XML": "",
+          "LuaScript": "",
+          "Transform": {}
+        },
+        {
+          "GUID": "D8511971BDC9",
+          "Name": "Card",
+          "CardID": 100,
+          "Nickname": "Удар",
+          "Description": "Атака",
+          "XML": "",
+          "LuaScript": "",
+          "Transform": {}
+        },
+        {
+          "GUID": "D8511971BDC9",
+          "Name": "Card",
+          "CardID": 100,
+          "Nickname": "Удар",
+          "Description": "Атака",
+          "XML": "",
+          "LuaScript": "",
+          "Transform": {}
+        },
+        {
+          "GUID": "D8511971BDC9",
+          "Name": "Card",
+          "CardID": 100,
+          "Nickname": "Удар",
+          "Description": "Атака",
+          "XML": "",
+          "LuaScript": "",
+          "Transform": {}
+        },
+        {
+          "GUID": "D8511971BDC9",
+          "Name": "Card",
+          "CardID": 100,
+          "Nickname": "Удар",
+          "Description": "Атака",
+          "XML": "",
+          "LuaScript": "",
+          "Transform": {}
+        },
+        {
+          "GUID": "448E0FA978FC",
+          "Name": "Card",
+          "CardID": 200,
+          "Nickname": "Сокрушение",
+          "Description": "Атака. Когда эта карта должна отмениться, вместо этого сбросьте карту",
+          "XML": "",
+          "LuaScript": "",
+          "Transform": {}
+        },
+        {
+          "GUID": "448E0FA978FC",
+          "Name": "Card",
+          "CardID": 200,
+          "Nickname": "Сокрушение",
+          "Description": "Атака. Когда эта карта должна отмениться, вместо этого сбросьте карту",
+          "XML": "",
+          "LuaScript": "",
+          "Transform": {}
+        },
+        {
+          "GUID": "448E0FA978FC",
+          "Name": "Card",
+          "CardID": 200,
+          "Nickname": "Сокрушение",
+          "Description": "Атака. Когда эта карта должна отмениться, вместо этого сбросьте карту",
+          "XML": "",
+          "LuaScript": "",
+          "Transform": {}
+        },
+        {
+          "GUID": "448E0FA978FC",
+          "Name": "Card",
+          "CardID": 200,
+          "Nickname": "Сокрушение",
+          "Description": "Атака. Когда эта карта должна отмениться, вместо этого сбросьте карту",
+          "XML": "",
+          "LuaScript": "",
+          "Transform": {}
+        },
+        {
+          "GUID": "C3E580B35C2C",
+          "Name": "Card",
+          "CardID": 300,
+          "Nickname": "Блок",
+          "Description": "Защита / Восстановите усилие",
+          "XML": "",
+          "LuaScript": "",
+          "Transform": {}
+        },
+        {
+          "GUID": "C3E580B35C2C",
+          "Name": "Card",
+          "CardID": 300,
+          "Nickname": "Блок",
+          "Description": "Защита / Восстановите усилие",
+          "XML": "",
+          "LuaScript": "",
+          "Transform": {}
+        },
+        {
+          "GUID": "C3E580B35C2C",
+          "Name": "Card",
+          "CardID": 300,
+          "Nickname": "Блок",
+          "Description": "Защита / Восстановите усилие",
+          "XML": "",
+          "LuaScript": "",
+          "Transform": {}
+        },
+        {
+          "GUID": "C3E580B35C2C",
+          "Name": "Card",
+          "CardID": 300,
+          "Nickname": "Блок",
+          "Description": "Защита / Восстановите усилие",
+          "XML": "",
+          "LuaScript": "",
+          "Transform": {}
+        },
+        {
+          "GUID": "F7129DDCAD93",
+          "Name": "Card",
+          "CardID": 400,
+          "Nickname": "Парирование",
+          "Description": "Главная. Защита. Если отменили, переверните эту карту. / Атака 1",
+          "XML": "",
+          "LuaScript": "",
+          "Transform": {}
+        },
+        {
+          "GUID": "F7129DDCAD93",
+          "Name": "Card",
+          "CardID": 400,
+          "Nickname": "Парирование",
+          "Description": "Главная. Защита. Если отменили, переверните эту карту. / Атака 1",
+          "XML": "",
+          "LuaScript": "",
+          "Transform": {}
+        },
+        {
+          "GUID": "07A520738F3F",
+          "Name": "Card",
+          "CardID": 500,
+          "Nickname": "Уклонение",
+          "Description": "Приём. Сбросьте эту карту и выбранную карту из вражеской серии. Вытяните новые взамен.",
+          "XML": "",
+          "LuaScript": "",
+          "Transform": {}
+        },
+        {
+          "GUID": "07A520738F3F",
+          "Name": "Card",
+          "CardID": 500,
+          "Nickname": "Уклонение",
+          "Description": "Приём. Сбросьте эту карту и выбранную карту из вражеской серии. Вытяните новые взамен.",
+          "XML": "",
+          "LuaScript": "",
+          "Transform": {}
+        },
+        {
+          "GUID": "4C1368AA0CDE",
+          "Name": "Card",
+          "CardID": 600,
+          "Nickname": "Финт",
+          "Description": "Приём. Скопируйте эффект карты атаки или защиты из вашей серии.",
+          "XML": "",
+          "LuaScript": "",
+          "Transform": {}
+        },
+        {
+          "GUID": "4C1368AA0CDE",
+          "Name": "Card",
+          "CardID": 600,
+          "Nickname": "Финт",
+          "Description": "Приём. Скопируйте эффект карты атаки или защиты из вашей серии.",
+          "XML": "",
+          "LuaScript": "",
+          "Transform": {}
+        },
+        {
+          "GUID": "C061EA5FF010",
+          "Name": "Card",
+          "CardID": 700,
+          "Nickname": "Отход",
+          "Description": "Приём. Ваш рыцарь не получает в этот ход больше 1 ранения / Статус.",
+          "XML": "",
+          "LuaScript": "",
+          "Transform": {}
+        },
+        {
+          "GUID": "C061EA5FF010",
+          "Name": "Card",
+          "CardID": 700,
+          "Nickname": "Отход",
+          "Description": "Приём. Ваш рыцарь не получает в этот ход больше 1 ранения / Статус.",
+          "XML": "",
+          "LuaScript": "",
+          "Transform": {}
+        }
+      ]
+    },
+    {
+      "GUID": "BA0B1793A4FF",
+      "Name": "DeckCustom",
+      "IsHidden": true,
+      "Transform": {
+        "posX": 0,
+        "posY": 1,
+        "posZ": 0,
+        "rotX": 0,
+        "rotY": 180,
+        "rotZ": 180,
+        "scaleX": 1,
+        "scaleY": 1,
+        "scaleZ": 1
+      },
+      "Nickname": "Небазовые карты",
+      "Description": "Чары, Концентрация, Подлость, Допинг, Барьер и др.",
+      "CustomDeck": {
+        "8": {
+          "FaceURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/card_images/chary.png?v=1784535043",
+          "BackURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/back_images/card_back.png?v=1784535043",
+          "NumWidth": 1,
+          "NumHeight": 1,
+          "BackIsHidden": true,
+          "UniqueBack": false
+        },
+        "9": {
+          "FaceURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/card_images/kontsentratsiya.png?v=1784535043",
+          "BackURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/back_images/card_back.png?v=1784535043",
+          "NumWidth": 1,
+          "NumHeight": 1,
+          "BackIsHidden": true,
+          "UniqueBack": false
+        },
+        "10": {
+          "FaceURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/card_images/podlost.png?v=1784535043",
+          "BackURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/back_images/card_back.png?v=1784535043",
+          "NumWidth": 1,
+          "NumHeight": 1,
+          "BackIsHidden": true,
+          "UniqueBack": false
+        },
+        "11": {
+          "FaceURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/card_images/doping.png?v=1784535043",
+          "BackURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/back_images/card_back.png?v=1784535043",
+          "NumWidth": 1,
+          "NumHeight": 1,
+          "BackIsHidden": true,
+          "UniqueBack": false
+        },
+        "12": {
+          "FaceURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/card_images/barer.png?v=1784535043",
+          "BackURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/back_images/card_back.png?v=1784535043",
+          "NumWidth": 1,
+          "NumHeight": 1,
+          "BackIsHidden": true,
+          "UniqueBack": false
+        },
+        "13": {
+          "FaceURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/card_images/vspyshka.png?v=1784535043",
+          "BackURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/back_images/card_back.png?v=1784535043",
+          "NumWidth": 1,
+          "NumHeight": 1,
+          "BackIsHidden": true,
+          "UniqueBack": false
+        },
+        "14": {
+          "FaceURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/card_images/ukol.png?v=1784535043",
+          "BackURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/back_images/card_back.png?v=1784535043",
+          "NumWidth": 1,
+          "NumHeight": 1,
+          "BackIsHidden": true,
+          "UniqueBack": false
+        },
+        "15": {
+          "FaceURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/card_images/kazn.png?v=1784535043",
+          "BackURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/back_images/card_back.png?v=1784535043",
+          "NumWidth": 1,
+          "NumHeight": 1,
+          "BackIsHidden": true,
+          "UniqueBack": false
+        },
+        "16": {
+          "FaceURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/card_images/podsechka.png?v=1784535043",
+          "BackURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/back_images/card_back.png?v=1784535043",
+          "NumWidth": 1,
+          "NumHeight": 1,
+          "BackIsHidden": true,
+          "UniqueBack": false
+        },
+        "17": {
+          "FaceURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/card_images/kombo.png?v=1784535043",
+          "BackURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/back_images/card_back.png?v=1784535043",
+          "NumWidth": 1,
+          "NumHeight": 1,
+          "BackIsHidden": true,
+          "UniqueBack": false
+        },
+        "18": {
+          "FaceURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/card_images/ukhod_v_ten.png?v=1784535043",
+          "BackURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/back_images/card_back.png?v=1784535043",
+          "NumWidth": 1,
+          "NumHeight": 1,
+          "BackIsHidden": true,
+          "UniqueBack": false
+        },
+        "19": {
+          "FaceURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/card_images/nasmeshka.png?v=1784535043",
+          "BackURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/back_images/card_back.png?v=1784535043",
+          "NumWidth": 1,
+          "NumHeight": 1,
+          "BackIsHidden": true,
+          "UniqueBack": false
+        },
+        "31": {
+          "FaceURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/card_images/zasada.png?v=1784535043",
+          "BackURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/back_images/card_back.png?v=1784535043",
+          "NumWidth": 1,
+          "NumHeight": 1,
+          "BackIsHidden": true,
+          "UniqueBack": false
+        },
+        "32": {
+          "FaceURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/card_images/razmashisty_udar.png?v=1784535043",
+          "BackURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/back_images/card_back.png?v=1784535043",
+          "NumWidth": 1,
+          "NumHeight": 1,
+          "BackIsHidden": true,
+          "UniqueBack": false
+        },
+        "33": {
+          "FaceURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/card_images/podrazhanie.png?v=1784535043",
+          "BackURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/back_images/card_back.png?v=1784535043",
+          "NumWidth": 1,
+          "NumHeight": 1,
+          "BackIsHidden": true,
+          "UniqueBack": false
+        },
+        "34": {
+          "FaceURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/card_images/yarost.png?v=1784535043",
+          "BackURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/back_images/card_back.png?v=1784535043",
+          "NumWidth": 1,
+          "NumHeight": 1,
+          "BackIsHidden": true,
+          "UniqueBack": false
+        },
+        "35": {
+          "FaceURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/card_images/proklyatie.png?v=1784535043",
+          "BackURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/back_images/card_back.png?v=1784535043",
+          "NumWidth": 1,
+          "NumHeight": 1,
+          "BackIsHidden": true,
+          "UniqueBack": false
+        },
+        "36": {
+          "FaceURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/card_images/vystrel.png?v=1784535043",
+          "BackURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/back_images/card_back.png?v=1784535043",
+          "NumWidth": 1,
+          "NumHeight": 1,
+          "BackIsHidden": true,
+          "UniqueBack": false
+        },
+        "37": {
+          "FaceURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/card_images/piruet.png?v=1784535043",
+          "BackURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/back_images/card_back.png?v=1784535043",
+          "NumWidth": 1,
+          "NumHeight": 1,
+          "BackIsHidden": true,
+          "UniqueBack": false
+        }
+      },
+      "DeckIDs": [
+        800,
+        800,
+        800,
+        800,
+        900,
+        900,
+        900,
+        900,
+        1000,
+        1000,
+        1000,
+        1000,
+        1100,
+        1100,
+        1100,
+        1100,
+        1200,
+        1200,
+        1200,
+        1200,
+        1300,
+        1300,
+        1300,
+        1300,
+        1400,
+        1400,
+        1400,
+        1400,
+        1500,
+        1500,
+        1600,
+        1600,
+        1600,
+        1600,
+        1700,
+        1700,
+        1700,
+        1700,
+        1800,
+        1800,
+        1800,
+        1800,
+        1900,
+        1900,
+        1900,
+        1900,
+        3100,
+        3100,
+        3100,
+        3200,
+        3200,
+        3300,
+        3300,
+        3400,
+        3400,
+        3500,
+        3500,
+        3600,
+        3600,
+        3700,
+        3700
+      ],
+      "ContainedObjects": [
+        {
+          "GUID": "BD39236DC23C",
+          "Name": "Card",
+          "CardID": 800,
+          "Nickname": "Чары",
+          "Description": "Атака / Защита",
+          "XML": "",
+          "LuaScript": "",
+          "Transform": {}
+        },
+        {
+          "GUID": "BD39236DC23C",
+          "Name": "Card",
+          "CardID": 800,
+          "Nickname": "Чары",
+          "Description": "Атака / Защита",
+          "XML": "",
+          "LuaScript": "",
+          "Transform": {}
+        },
+        {
+          "GUID": "BD39236DC23C",
+          "Name": "Card",
+          "CardID": 800,
+          "Nickname": "Чары",
+          "Description": "Атака / Защита",
+          "XML": "",
+          "LuaScript": "",
+          "Transform": {}
+        },
+        {
+          "GUID": "BD39236DC23C",
+          "Name": "Card",
+          "CardID": 800,
+          "Nickname": "Чары",
+          "Description": "Атака / Защита",
+          "XML": "",
+          "LuaScript": "",
+          "Transform": {}
+        },
+        {
+          "GUID": "63486B04BD4C",
+          "Name": "Card",
+          "CardID": 900,
+          "Nickname": "Концентрация",
+          "Description": "Защита. Восстановите усилие",
+          "XML": "",
+          "LuaScript": "",
+          "Transform": {}
+        },
+        {
+          "GUID": "63486B04BD4C",
+          "Name": "Card",
+          "CardID": 900,
+          "Nickname": "Концентрация",
+          "Description": "Защита. Восстановите усилие",
+          "XML": "",
+          "LuaScript": "",
+          "Transform": {}
+        },
+        {
+          "GUID": "63486B04BD4C",
+          "Name": "Card",
+          "CardID": 900,
+          "Nickname": "Концентрация",
+          "Description": "Защита. Восстановите усилие",
+          "XML": "",
+          "LuaScript": "",
+          "Transform": {}
+        },
+        {
+          "GUID": "63486B04BD4C",
+          "Name": "Card",
+          "CardID": 900,
+          "Nickname": "Концентрация",
+          "Description": "Защита. Восстановите усилие",
+          "XML": "",
+          "LuaScript": "",
+          "Transform": {}
+        },
+        {
+          "GUID": "ED1A81B39BD2",
+          "Name": "Card",
+          "CardID": 1000,
+          "Nickname": "Подлость",
+          "Description": "Атака. Сбросьте усилие врага",
+          "XML": "",
+          "LuaScript": "",
+          "Transform": {}
+        },
+        {
+          "GUID": "ED1A81B39BD2",
+          "Name": "Card",
+          "CardID": 1000,
+          "Nickname": "Подлость",
+          "Description": "Атака. Сбросьте усилие врага",
+          "XML": "",
+          "LuaScript": "",
+          "Transform": {}
+        },
+        {
+          "GUID": "ED1A81B39BD2",
+          "Name": "Card",
+          "CardID": 1000,
+          "Nickname": "Подлость",
+          "Description": "Атака. Сбросьте усилие врага",
+          "XML": "",
+          "LuaScript": "",
+          "Transform": {}
+        },
+        {
+          "GUID": "ED1A81B39BD2",
+          "Name": "Card",
+          "CardID": 1000,
+          "Nickname": "Подлость",
+          "Description": "Атака. Сбросьте усилие врага",
+          "XML": "",
+          "LuaScript": "",
+          "Transform": {}
+        },
+        {
+          "GUID": "D0316520CFE9",
+          "Name": "Card",
+          "CardID": 1100,
+          "Nickname": "Допинг",
+          "Description": "Приём. Сбросьте эту карту. Вытяните две карты.",
+          "XML": "",
+          "LuaScript": "",
+          "Transform": {}
+        },
+        {
+          "GUID": "D0316520CFE9",
+          "Name": "Card",
+          "CardID": 1100,
+          "Nickname": "Допинг",
+          "Description": "Приём. Сбросьте эту карту. Вытяните две карты.",
+          "XML": "",
+          "LuaScript": "",
+          "Transform": {}
+        },
+        {
+          "GUID": "D0316520CFE9",
+          "Name": "Card",
+          "CardID": 1100,
+          "Nickname": "Допинг",
+          "Description": "Приём. Сбросьте эту карту. Вытяните две карты.",
+          "XML": "",
+          "LuaScript": "",
+          "Transform": {}
+        },
+        {
+          "GUID": "D0316520CFE9",
+          "Name": "Card",
+          "CardID": 1100,
+          "Nickname": "Допинг",
+          "Description": "Приём. Сбросьте эту карту. Вытяните две карты.",
+          "XML": "",
+          "LuaScript": "",
+          "Transform": {}
+        },
+        {
+          "GUID": "D6D4599D7E05",
+          "Name": "Card",
+          "CardID": 1200,
+          "Nickname": "Барьер",
+          "Description": "Защита. Применяется дважды.",
+          "XML": "",
+          "LuaScript": "",
+          "Transform": {}
+        },
+        {
+          "GUID": "D6D4599D7E05",
+          "Name": "Card",
+          "CardID": 1200,
+          "Nickname": "Барьер",
+          "Description": "Защита. Применяется дважды.",
+          "XML": "",
+          "LuaScript": "",
+          "Transform": {}
+        },
+        {
+          "GUID": "D6D4599D7E05",
+          "Name": "Card",
+          "CardID": 1200,
+          "Nickname": "Барьер",
+          "Description": "Защита. Применяется дважды.",
+          "XML": "",
+          "LuaScript": "",
+          "Transform": {}
+        },
+        {
+          "GUID": "D6D4599D7E05",
+          "Name": "Card",
+          "CardID": 1200,
+          "Nickname": "Барьер",
+          "Description": "Защита. Применяется дважды.",
+          "XML": "",
+          "LuaScript": "",
+          "Transform": {}
+        },
+        {
+          "GUID": "CE111559817B",
+          "Name": "Card",
+          "CardID": 1300,
+          "Nickname": "Вспышка",
+          "Description": "Приём. Статус. Соперник может активировать эту карту, чтобы получить Защита.",
+          "XML": "",
+          "LuaScript": "",
+          "Transform": {}
+        },
+        {
+          "GUID": "CE111559817B",
+          "Name": "Card",
+          "CardID": 1300,
+          "Nickname": "Вспышка",
+          "Description": "Приём. Статус. Соперник может активировать эту карту, чтобы получить Защита.",
+          "XML": "",
+          "LuaScript": "",
+          "Transform": {}
+        },
+        {
+          "GUID": "CE111559817B",
+          "Name": "Card",
+          "CardID": 1300,
+          "Nickname": "Вспышка",
+          "Description": "Приём. Статус. Соперник может активировать эту карту, чтобы получить Защита.",
+          "XML": "",
+          "LuaScript": "",
+          "Transform": {}
+        },
+        {
+          "GUID": "CE111559817B",
+          "Name": "Card",
+          "CardID": 1300,
+          "Nickname": "Вспышка",
+          "Description": "Приём. Статус. Соперник может активировать эту карту, чтобы получить Защита.",
+          "XML": "",
+          "LuaScript": "",
+          "Transform": {}
+        },
+        {
+          "GUID": "29B79AC39849",
+          "Name": "Card",
+          "CardID": 1400,
+          "Nickname": "Укол",
+          "Description": "Атака. Если ранили врага, замешайте усталость в его колоду.",
+          "XML": "",
+          "LuaScript": "",
+          "Transform": {}
+        },
+        {
+          "GUID": "29B79AC39849",
+          "Name": "Card",
+          "CardID": 1400,
+          "Nickname": "Укол",
+          "Description": "Атака. Если ранили врага, замешайте усталость в его колоду.",
+          "XML": "",
+          "LuaScript": "",
+          "Transform": {}
+        },
+        {
+          "GUID": "29B79AC39849",
+          "Name": "Card",
+          "CardID": 1400,
+          "Nickname": "Укол",
+          "Description": "Атака. Если ранили врага, замешайте усталость в его колоду.",
+          "XML": "",
+          "LuaScript": "",
+          "Transform": {}
+        },
+        {
+          "GUID": "29B79AC39849",
+          "Name": "Card",
+          "CardID": 1400,
+          "Nickname": "Укол",
+          "Description": "Атака. Если ранили врага, замешайте усталость в его колоду.",
+          "XML": "",
+          "LuaScript": "",
+          "Transform": {}
+        },
+        {
+          "GUID": "B85461C973F7",
+          "Name": "Card",
+          "CardID": 1500,
+          "Nickname": "Казнь",
+          "Description": "Атака. Если враг получил вторую травму, он отъехал.",
+          "XML": "",
+          "LuaScript": "",
+          "Transform": {}
+        },
+        {
+          "GUID": "B85461C973F7",
+          "Name": "Card",
+          "CardID": 1500,
+          "Nickname": "Казнь",
+          "Description": "Атака. Если враг получил вторую травму, он отъехал.",
+          "XML": "",
+          "LuaScript": "",
+          "Transform": {}
+        },
+        {
+          "GUID": "AACF2CD68097",
+          "Name": "Card",
+          "CardID": 1600,
+          "Nickname": "Подсечка",
+          "Description": "Атака. Если ранили врага, он сбрасывает верхнюю карту из колоды.",
+          "XML": "",
+          "LuaScript": "",
+          "Transform": {}
+        },
+        {
+          "GUID": "AACF2CD68097",
+          "Name": "Card",
+          "CardID": 1600,
+          "Nickname": "Подсечка",
+          "Description": "Атака. Если ранили врага, он сбрасывает верхнюю карту из колоды.",
+          "XML": "",
+          "LuaScript": "",
+          "Transform": {}
+        },
+        {
+          "GUID": "AACF2CD68097",
+          "Name": "Card",
+          "CardID": 1600,
+          "Nickname": "Подсечка",
+          "Description": "Атака. Если ранили врага, он сбрасывает верхнюю карту из колоды.",
+          "XML": "",
+          "LuaScript": "",
+          "Transform": {}
+        },
+        {
+          "GUID": "AACF2CD68097",
+          "Name": "Card",
+          "CardID": 1600,
+          "Nickname": "Подсечка",
+          "Description": "Атака. Если ранили врага, он сбрасывает верхнюю карту из колоды.",
+          "XML": "",
+          "LuaScript": "",
+          "Transform": {}
+        },
+        {
+          "GUID": "7D4AF81DE94D",
+          "Name": "Card",
+          "CardID": 1700,
+          "Nickname": "Комбо",
+          "Description": "Главная. Атака. Можете потратить усилие, чтобы перевернуть. / Атака. Наносит ранение дважды.",
+          "XML": "",
+          "LuaScript": "",
+          "Transform": {}
+        },
+        {
+          "GUID": "7D4AF81DE94D",
+          "Name": "Card",
+          "CardID": 1700,
+          "Nickname": "Комбо",
+          "Description": "Главная. Атака. Можете потратить усилие, чтобы перевернуть. / Атака. Наносит ранение дважды.",
+          "XML": "",
+          "LuaScript": "",
+          "Transform": {}
+        },
+        {
+          "GUID": "7D4AF81DE94D",
+          "Name": "Card",
+          "CardID": 1700,
+          "Nickname": "Комбо",
+          "Description": "Главная. Атака. Можете потратить усилие, чтобы перевернуть. / Атака. Наносит ранение дважды.",
+          "XML": "",
+          "LuaScript": "",
+          "Transform": {}
+        },
+        {
+          "GUID": "7D4AF81DE94D",
+          "Name": "Card",
+          "CardID": 1700,
+          "Nickname": "Комбо",
+          "Description": "Главная. Атака. Можете потратить усилие, чтобы перевернуть. / Атака. Наносит ранение дважды.",
+          "XML": "",
+          "LuaScript": "",
+          "Transform": {}
+        },
+        {
+          "GUID": "4615258D18FA",
+          "Name": "Card",
+          "CardID": 1800,
+          "Nickname": "Уход в тень",
+          "Description": "Защита. Можете потратить усилие, чтобы вытянуть карту.",
+          "XML": "",
+          "LuaScript": "",
+          "Transform": {}
+        },
+        {
+          "GUID": "4615258D18FA",
+          "Name": "Card",
+          "CardID": 1800,
+          "Nickname": "Уход в тень",
+          "Description": "Защита. Можете потратить усилие, чтобы вытянуть карту.",
+          "XML": "",
+          "LuaScript": "",
+          "Transform": {}
+        },
+        {
+          "GUID": "4615258D18FA",
+          "Name": "Card",
+          "CardID": 1800,
+          "Nickname": "Уход в тень",
+          "Description": "Защита. Можете потратить усилие, чтобы вытянуть карту.",
+          "XML": "",
+          "LuaScript": "",
+          "Transform": {}
+        },
+        {
+          "GUID": "4615258D18FA",
+          "Name": "Card",
+          "CardID": 1800,
+          "Nickname": "Уход в тень",
+          "Description": "Защита. Можете потратить усилие, чтобы вытянуть карту.",
+          "XML": "",
+          "LuaScript": "",
+          "Transform": {}
+        },
+        {
+          "GUID": "B306325D3B4C",
+          "Name": "Card",
+          "CardID": 1900,
+          "Nickname": "Насмешка",
+          "Description": "Приём. Отмените защиту врага.",
+          "XML": "",
+          "LuaScript": "",
+          "Transform": {}
+        },
+        {
+          "GUID": "B306325D3B4C",
+          "Name": "Card",
+          "CardID": 1900,
+          "Nickname": "Насмешка",
+          "Description": "Приём. Отмените защиту врага.",
+          "XML": "",
+          "LuaScript": "",
+          "Transform": {}
+        },
+        {
+          "GUID": "B306325D3B4C",
+          "Name": "Card",
+          "CardID": 1900,
+          "Nickname": "Насмешка",
+          "Description": "Приём. Отмените защиту врага.",
+          "XML": "",
+          "LuaScript": "",
+          "Transform": {}
+        },
+        {
+          "GUID": "B306325D3B4C",
+          "Name": "Card",
+          "CardID": 1900,
+          "Nickname": "Насмешка",
+          "Description": "Приём. Отмените защиту врага.",
+          "XML": "",
+          "LuaScript": "",
+          "Transform": {}
+        },
+        {
+          "GUID": "3632B11B4DEB",
+          "Name": "Card",
+          "CardID": 3100,
+          "Nickname": "Засада",
+          "Description": "Атака. Отмените приём врага. Делается вне очереди.",
+          "XML": "",
+          "LuaScript": "",
+          "Transform": {}
+        },
+        {
+          "GUID": "3632B11B4DEB",
+          "Name": "Card",
+          "CardID": 3100,
+          "Nickname": "Засада",
+          "Description": "Атака. Отмените приём врага. Делается вне очереди.",
+          "XML": "",
+          "LuaScript": "",
+          "Transform": {}
+        },
+        {
+          "GUID": "3632B11B4DEB",
+          "Name": "Card",
+          "CardID": 3100,
+          "Nickname": "Засада",
+          "Description": "Атака. Отмените приём врага. Делается вне очереди.",
+          "XML": "",
+          "LuaScript": "",
+          "Transform": {}
+        },
+        {
+          "GUID": "1880C2D7F601",
+          "Name": "Card",
+          "CardID": 3200,
+          "Nickname": "Размашистый удар",
+          "Description": "Атака. Нанесите ранение оруженосцу врага.",
+          "XML": "",
+          "LuaScript": "",
+          "Transform": {}
+        },
+        {
+          "GUID": "1880C2D7F601",
+          "Name": "Card",
+          "CardID": 3200,
+          "Nickname": "Размашистый удар",
+          "Description": "Атака. Нанесите ранение оруженосцу врага.",
+          "XML": "",
+          "LuaScript": "",
+          "Transform": {}
+        },
+        {
+          "GUID": "AB3FB7A6FA04",
+          "Name": "Card",
+          "CardID": 3300,
+          "Nickname": "Подражание",
+          "Description": "Приём. Выложите вытяните карту из колоды соперника.",
+          "XML": "",
+          "LuaScript": "",
+          "Transform": {}
+        },
+        {
+          "GUID": "AB3FB7A6FA04",
+          "Name": "Card",
+          "CardID": 3300,
+          "Nickname": "Подражание",
+          "Description": "Приём. Выложите вытяните карту из колоды соперника.",
+          "XML": "",
+          "LuaScript": "",
+          "Transform": {}
+        },
+        {
+          "GUID": "1BA4FC486B8B",
+          "Name": "Card",
+          "CardID": 3400,
+          "Nickname": "Ярость",
+          "Description": "Атака. Если у вас есть травма, применяется дважды",
+          "XML": "",
+          "LuaScript": "",
+          "Transform": {}
+        },
+        {
+          "GUID": "1BA4FC486B8B",
+          "Name": "Card",
+          "CardID": 3400,
+          "Nickname": "Ярость",
+          "Description": "Атака. Если у вас есть травма, применяется дважды",
+          "XML": "",
+          "LuaScript": "",
+          "Transform": {}
+        },
+        {
+          "GUID": "22CD51B8F2EE",
+          "Name": "Card",
+          "CardID": 3500,
+          "Nickname": "Проклятие",
+          "Description": "Приём. Статус. Если вы ранили врага, ваш рыцарь получает ранение.",
+          "XML": "",
+          "LuaScript": "",
+          "Transform": {}
+        },
+        {
+          "GUID": "22CD51B8F2EE",
+          "Name": "Card",
+          "CardID": 3500,
+          "Nickname": "Проклятие",
+          "Description": "Приём. Статус. Если вы ранили врага, ваш рыцарь получает ранение.",
+          "XML": "",
+          "LuaScript": "",
+          "Transform": {}
+        },
+        {
+          "GUID": "F83291F6B750",
+          "Name": "Card",
+          "CardID": 3600,
+          "Nickname": "Выстрел",
+          "Description": "Атака. Отмените атаку.",
+          "XML": "",
+          "LuaScript": "",
+          "Transform": {}
+        },
+        {
+          "GUID": "F83291F6B750",
+          "Name": "Card",
+          "CardID": 3600,
+          "Nickname": "Выстрел",
+          "Description": "Атака. Отмените атаку.",
+          "XML": "",
+          "LuaScript": "",
+          "Transform": {}
+        },
+        {
+          "GUID": "7C5A19C81D20",
+          "Name": "Card",
+          "CardID": 3700,
+          "Nickname": "Пируэт",
+          "Description": "Главная. Атака. Если эту карту отменяют, вместо этого переверните её. / Приём. Не отменяется. Вытяните ещё одну карту.",
+          "XML": "",
+          "LuaScript": "",
+          "Transform": {}
+        },
+        {
+          "GUID": "7C5A19C81D20",
+          "Name": "Card",
+          "CardID": 3700,
+          "Nickname": "Пируэт",
+          "Description": "Главная. Атака. Если эту карту отменяют, вместо этого переверните её. / Приём. Не отменяется. Вытяните ещё одну карту.",
+          "XML": "",
+          "LuaScript": "",
+          "Transform": {}
+        }
+      ]
+    },
+    {
+      "GUID": "C0D1894FC71A",
+      "Name": "DeckCustom",
+      "IsHidden": true,
+      "Transform": {
+        "posX": 2,
+        "posY": 1,
+        "posZ": 0,
+        "rotX": 0,
+        "rotY": 180,
+        "rotZ": 180,
+        "scaleX": 1,
+        "scaleY": 1,
+        "scaleZ": 1
+      },
+      "Nickname": "Уникальные карты",
+      "Description": "Милость божья, Укус, Удар Грааля, Шторм, Подчинение и др.",
+      "CustomDeck": {
+        "20": {
+          "FaceURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/card_images/milost_bozhya.png?v=1784535043",
+          "BackURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/back_images/card_back.png?v=1784535043",
+          "NumWidth": 1,
+          "NumHeight": 1,
+          "BackIsHidden": true,
+          "UniqueBack": false
+        },
+        "21": {
+          "FaceURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/card_images/ukus.png?v=1784535043",
+          "BackURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/back_images/card_back.png?v=1784535043",
+          "NumWidth": 1,
+          "NumHeight": 1,
+          "BackIsHidden": true,
+          "UniqueBack": false
+        },
+        "22": {
+          "FaceURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/card_images/udar_graalya.png?v=1784535043",
+          "BackURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/back_images/card_back.png?v=1784535043",
+          "NumWidth": 1,
+          "NumHeight": 1,
+          "BackIsHidden": true,
+          "UniqueBack": false
+        },
+        "23": {
+          "FaceURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/card_images/shtorm.png?v=1784535043",
+          "BackURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/back_images/card_back.png?v=1784535043",
+          "NumWidth": 1,
+          "NumHeight": 1,
+          "BackIsHidden": true,
+          "UniqueBack": false
+        },
+        "24": {
+          "FaceURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/card_images/podchinene.png?v=1784535043",
+          "BackURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/back_images/card_back.png?v=1784535043",
+          "NumWidth": 1,
+          "NumHeight": 1,
+          "BackIsHidden": true,
+          "UniqueBack": false
+        },
+        "38": {
+          "FaceURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/card_images/sila_lesa.png?v=1784535043",
+          "BackURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/back_images/card_back.png?v=1784535043",
+          "NumWidth": 1,
+          "NumHeight": 1,
+          "BackIsHidden": true,
+          "UniqueBack": false
+        },
+        "39": {
+          "FaceURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/card_images/osushenie.png?v=1784535043",
+          "BackURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/back_images/card_back.png?v=1784535043",
+          "NumWidth": 1,
+          "NumHeight": 1,
+          "BackIsHidden": true,
+          "UniqueBack": false
+        },
+        "40": {
+          "FaceURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/card_images/vremennoy_sdvig.png?v=1784535043",
+          "BackURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/back_images/card_back.png?v=1784535043",
+          "NumWidth": 1,
+          "NumHeight": 1,
+          "BackIsHidden": true,
+          "UniqueBack": false
+        },
+        "41": {
+          "FaceURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/card_images/vzryv.png?v=1784535043",
+          "BackURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/back_images/card_back.png?v=1784535043",
+          "NumWidth": 1,
+          "NumHeight": 1,
+          "BackIsHidden": true,
+          "UniqueBack": false
+        }
+      },
+      "DeckIDs": [
+        2000,
+        2000,
+        2100,
+        2100,
+        2200,
+        2300,
+        2300,
+        2400,
+        2400,
+        3800,
+        3900,
+        3900,
+        4000,
+        4100
+      ],
+      "ContainedObjects": [
+        {
+          "GUID": "1AC82CAAF2A7",
+          "Name": "Card",
+          "CardID": 2000,
+          "Nickname": "Милость божья",
+          "Description": "Защита. Сбросьте травму с рыцаря. Эту карту нельзя брать из сброса.",
+          "XML": "",
+          "LuaScript": "",
+          "Transform": {}
+        },
+        {
+          "GUID": "1AC82CAAF2A7",
+          "Name": "Card",
+          "CardID": 2000,
+          "Nickname": "Милость божья",
+          "Description": "Защита. Сбросьте травму с рыцаря. Эту карту нельзя брать из сброса.",
+          "XML": "",
+          "LuaScript": "",
+          "Transform": {}
+        },
+        {
+          "GUID": "6BDD925F5660",
+          "Name": "Card",
+          "CardID": 2100,
+          "Nickname": "Укус",
+          "Description": "Атака. Не отменяется",
+          "XML": "",
+          "LuaScript": "",
+          "Transform": {}
+        },
+        {
+          "GUID": "6BDD925F5660",
+          "Name": "Card",
+          "CardID": 2100,
+          "Nickname": "Укус",
+          "Description": "Атака. Не отменяется",
+          "XML": "",
+          "LuaScript": "",
+          "Transform": {}
+        },
+        {
+          "GUID": "E99D9C2BB0F8",
+          "Name": "Card",
+          "CardID": 2200,
+          "Nickname": "Удар Грааля",
+          "Description": "Атака. Вытяните карту. Если это усталость, выкиньте её из колоды.",
+          "XML": "",
+          "LuaScript": "",
+          "Transform": {}
+        },
+        {
+          "GUID": "527FB3E87367",
+          "Name": "Card",
+          "CardID": 2300,
+          "Nickname": "Шторм",
+          "Description": "Приём. Статус. Вы можете активировать эту карту, чтобы получить Атака.",
+          "XML": "",
+          "LuaScript": "",
+          "Transform": {}
+        },
+        {
+          "GUID": "527FB3E87367",
+          "Name": "Card",
+          "CardID": 2300,
+          "Nickname": "Шторм",
+          "Description": "Приём. Статус. Вы можете активировать эту карту, чтобы получить Атака.",
+          "XML": "",
+          "LuaScript": "",
+          "Transform": {}
+        },
+        {
+          "GUID": "0EC3CEB2F078",
+          "Name": "Card",
+          "CardID": 2400,
+          "Nickname": "Подчинение",
+          "Description": "Приём. Активируйте карту вражеской серии как свою.",
+          "XML": "",
+          "LuaScript": "",
+          "Transform": {}
+        },
+        {
+          "GUID": "0EC3CEB2F078",
+          "Name": "Card",
+          "CardID": 2400,
+          "Nickname": "Подчинение",
+          "Description": "Приём. Активируйте карту вражеской серии как свою.",
+          "XML": "",
+          "LuaScript": "",
+          "Transform": {}
+        },
+        {
+          "GUID": "DDE2B5164CDA",
+          "Name": "Card",
+          "CardID": 3800,
+          "Nickname": "Сила леса",
+          "Description": "Защита. Статус. Отмените ранение и сбросьте эту карту.",
+          "XML": "",
+          "LuaScript": "",
+          "Transform": {}
+        },
+        {
+          "GUID": "14EBFEF33C99",
+          "Name": "Card",
+          "CardID": 3900,
+          "Nickname": "Осушение",
+          "Description": "Атака. Если нанесли ранение, снимите одно ранение у себя.",
+          "XML": "",
+          "LuaScript": "",
+          "Transform": {}
+        },
+        {
+          "GUID": "14EBFEF33C99",
+          "Name": "Card",
+          "CardID": 3900,
+          "Nickname": "Осушение",
+          "Description": "Атака. Если нанесли ранение, снимите одно ранение у себя.",
+          "XML": "",
+          "LuaScript": "",
+          "Transform": {}
+        },
+        {
+          "GUID": "75BAA71C1D08",
+          "Name": "Card",
+          "CardID": 4000,
+          "Nickname": "Временной сдвиг",
+          "Description": "Приём. Вы и враг замешиваете серии в свои колоды. Ход начинается заново / Замешайте эту карту в колоду, вытяните карту.",
+          "XML": "",
+          "LuaScript": "",
+          "Transform": {}
+        },
+        {
+          "GUID": "5FE8F15D4324",
+          "Name": "Card",
+          "CardID": 4100,
+          "Nickname": "Взрыв",
+          "Description": "Атака. Применяется дважды. Все ранения по врагу наносятся так же его оруженосцу",
+          "XML": "",
+          "LuaScript": "",
+          "Transform": {}
+        }
+      ]
+    },
+    {
+      "GUID": "8483B72D1C3D",
+      "Name": "DeckCustom",
+      "IsHidden": true,
+      "Transform": {
+        "posX": 4,
+        "posY": 1,
+        "posZ": 0,
+        "rotX": 0,
+        "rotY": 180,
+        "rotZ": 180,
+        "scaleX": 1,
+        "scaleY": 1,
+        "scaleZ": 1
+      },
+      "Nickname": "Колода усталости",
+      "Description": "Замешивается при перемешивании",
+      "CustomDeck": {
+        "25": {
+          "FaceURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/card_images/ustalost.png?v=1784535043",
+          "BackURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/back_images/card_back.png?v=1784535043",
+          "NumWidth": 1,
+          "NumHeight": 1,
+          "BackIsHidden": true,
+          "UniqueBack": false
+        }
+      },
+      "DeckIDs": [
+        2500,
+        2500,
+        2500,
+        2500,
+        2500,
+        2500,
+        2500,
+        2500,
+        2500,
+        2500
+      ],
+      "ContainedObjects": [
+        {
+          "GUID": "04C98AE931C6",
+          "Name": "Card",
+          "CardID": 2500,
+          "Nickname": "Усталость",
+          "Description": "Замешивается при перемешивании. Сбрасывает 1 карту сверху",
+          "XML": "",
+          "LuaScript": "",
+          "Transform": {}
+        },
+        {
+          "GUID": "04C98AE931C6",
+          "Name": "Card",
+          "CardID": 2500,
+          "Nickname": "Усталость",
+          "Description": "Замешивается при перемешивании. Сбрасывает 1 карту сверху",
+          "XML": "",
+          "LuaScript": "",
+          "Transform": {}
+        },
+        {
+          "GUID": "04C98AE931C6",
+          "Name": "Card",
+          "CardID": 2500,
+          "Nickname": "Усталость",
+          "Description": "Замешивается при перемешивании. Сбрасывает 1 карту сверху",
+          "XML": "",
+          "LuaScript": "",
+          "Transform": {}
+        },
+        {
+          "GUID": "04C98AE931C6",
+          "Name": "Card",
+          "CardID": 2500,
+          "Nickname": "Усталость",
+          "Description": "Замешивается при перемешивании. Сбрасывает 1 карту сверху",
+          "XML": "",
+          "LuaScript": "",
+          "Transform": {}
+        },
+        {
+          "GUID": "04C98AE931C6",
+          "Name": "Card",
+          "CardID": 2500,
+          "Nickname": "Усталость",
+          "Description": "Замешивается при перемешивании. Сбрасывает 1 карту сверху",
+          "XML": "",
+          "LuaScript": "",
+          "Transform": {}
+        },
+        {
+          "GUID": "04C98AE931C6",
+          "Name": "Card",
+          "CardID": 2500,
+          "Nickname": "Усталость",
+          "Description": "Замешивается при перемешивании. Сбрасывает 1 карту сверху",
+          "XML": "",
+          "LuaScript": "",
+          "Transform": {}
+        },
+        {
+          "GUID": "04C98AE931C6",
+          "Name": "Card",
+          "CardID": 2500,
+          "Nickname": "Усталость",
+          "Description": "Замешивается при перемешивании. Сбрасывает 1 карту сверху",
+          "XML": "",
+          "LuaScript": "",
+          "Transform": {}
+        },
+        {
+          "GUID": "04C98AE931C6",
+          "Name": "Card",
+          "CardID": 2500,
+          "Nickname": "Усталость",
+          "Description": "Замешивается при перемешивании. Сбрасывает 1 карту сверху",
+          "XML": "",
+          "LuaScript": "",
+          "Transform": {}
+        },
+        {
+          "GUID": "04C98AE931C6",
+          "Name": "Card",
+          "CardID": 2500,
+          "Nickname": "Усталость",
+          "Description": "Замешивается при перемешивании. Сбрасывает 1 карту сверху",
+          "XML": "",
+          "LuaScript": "",
+          "Transform": {}
+        },
+        {
+          "GUID": "04C98AE931C6",
+          "Name": "Card",
+          "CardID": 2500,
+          "Nickname": "Усталость",
+          "Description": "Замешивается при перемешивании. Сбрасывает 1 карту сверху",
+          "XML": "",
+          "LuaScript": "",
+          "Transform": {}
+        }
+      ]
+    },
+    {
+      "GUID": "07B1AC7C1374",
+      "Name": "DeckCustom",
+      "IsHidden": true,
+      "Transform": {
+        "posX": -5,
+        "posY": 1,
+        "posZ": -3,
+        "rotX": 0,
+        "rotY": 180,
+        "rotZ": 180,
+        "scaleX": 1,
+        "scaleY": 1,
+        "scaleZ": 1
+      },
+      "Nickname": "Оружие: Меч",
+      "Description": "Стартовая колода: Меч",
+      "CustomDeck": {
+        "1": {
+          "FaceURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/card_images/udar.png?v=1784535043",
+          "BackURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/back_images/card_back.png?v=1784535043",
+          "NumWidth": 1,
+          "NumHeight": 1,
+          "BackIsHidden": true,
+          "UniqueBack": false
+        },
+        "3": {
+          "FaceURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/card_images/blok.png?v=1784535043",
+          "BackURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/back_images/card_back.png?v=1784535043",
+          "NumWidth": 1,
+          "NumHeight": 1,
+          "BackIsHidden": true,
+          "UniqueBack": false
+        },
+        "4": {
+          "FaceURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/card_images/parirovanie.png?v=1784535043",
+          "BackURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/back_images/card_back.png?v=1784535043",
+          "NumWidth": 1,
+          "NumHeight": 1,
+          "BackIsHidden": true,
+          "UniqueBack": false
+        },
+        "6": {
+          "FaceURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/card_images/fint.png?v=1784535043",
+          "BackURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/back_images/card_back.png?v=1784535043",
+          "NumWidth": 1,
+          "NumHeight": 1,
+          "BackIsHidden": true,
+          "UniqueBack": false
+        },
+        "5": {
+          "FaceURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/card_images/uklonenie.png?v=1784535043",
+          "BackURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/back_images/card_back.png?v=1784535043",
+          "NumWidth": 1,
+          "NumHeight": 1,
+          "BackIsHidden": true,
+          "UniqueBack": false
+        },
+        "26": {
+          "FaceURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/card_images/mech.png?v=1784535043",
+          "BackURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/back_images/back_mech.png?v=1784535043",
+          "NumWidth": 1,
+          "NumHeight": 1,
+          "BackIsHidden": true,
+          "UniqueBack": false
+        }
+      },
+      "DeckIDs": [
+        2600,
+        100,
+        100,
+        100,
+        300,
+        300,
+        400,
+        400,
+        600,
+        600,
+        500
+      ],
+      "ContainedObjects": [
+        {
+          "GUID": "13D5BE985350",
+          "Name": "Card",
+          "CardID": 2600,
+          "Nickname": "Меч",
+          "Description": "Трата 2 УСИЛ позволяет применить карту Атаки или Защиты дважды",
+          "XML": "",
+          "LuaScript": "",
+          "Transform": {}
+        },
+        {
+          "GUID": "62B638A5E094",
+          "Name": "Card",
+          "CardID": 100,
+          "Nickname": "Удар",
+          "Description": "Атака",
+          "XML": "",
+          "LuaScript": "",
+          "Transform": {}
+        },
+        {
+          "GUID": "62B638A5E094",
+          "Name": "Card",
+          "CardID": 100,
+          "Nickname": "Удар",
+          "Description": "Атака",
+          "XML": "",
+          "LuaScript": "",
+          "Transform": {}
+        },
+        {
+          "GUID": "62B638A5E094",
+          "Name": "Card",
+          "CardID": 100,
+          "Nickname": "Удар",
+          "Description": "Атака",
+          "XML": "",
+          "LuaScript": "",
+          "Transform": {}
+        },
+        {
+          "GUID": "7787E2158193",
+          "Name": "Card",
+          "CardID": 300,
+          "Nickname": "Блок",
+          "Description": "Защита / Восстановите усилие",
+          "XML": "",
+          "LuaScript": "",
+          "Transform": {}
+        },
+        {
+          "GUID": "7787E2158193",
+          "Name": "Card",
+          "CardID": 300,
+          "Nickname": "Блок",
+          "Description": "Защита / Восстановите усилие",
+          "XML": "",
+          "LuaScript": "",
+          "Transform": {}
+        },
+        {
+          "GUID": "FD02B942DC34",
+          "Name": "Card",
+          "CardID": 400,
+          "Nickname": "Парирование",
+          "Description": "Главная. Защита. Если отменили, переверните эту карту. / Атака 1",
+          "XML": "",
+          "LuaScript": "",
+          "Transform": {}
+        },
+        {
+          "GUID": "FD02B942DC34",
+          "Name": "Card",
+          "CardID": 400,
+          "Nickname": "Парирование",
+          "Description": "Главная. Защита. Если отменили, переверните эту карту. / Атака 1",
+          "XML": "",
+          "LuaScript": "",
+          "Transform": {}
+        },
+        {
+          "GUID": "D01F580CC733",
+          "Name": "Card",
+          "CardID": 600,
+          "Nickname": "Финт",
+          "Description": "Приём. Скопируйте эффект карты атаки или защиты из вашей серии.",
+          "XML": "",
+          "LuaScript": "",
+          "Transform": {}
+        },
+        {
+          "GUID": "D01F580CC733",
+          "Name": "Card",
+          "CardID": 600,
+          "Nickname": "Финт",
+          "Description": "Приём. Скопируйте эффект карты атаки или защиты из вашей серии.",
+          "XML": "",
+          "LuaScript": "",
+          "Transform": {}
+        },
+        {
+          "GUID": "327C0E8459AC",
+          "Name": "Card",
+          "CardID": 500,
+          "Nickname": "Уклонение",
+          "Description": "Приём. Сбросьте эту карту и выбранную карту из вражеской серии. Вытяните новые взамен.",
+          "XML": "",
+          "LuaScript": "",
+          "Transform": {}
+        }
+      ]
+    },
+    {
+      "GUID": "CC26BA1AF5E4",
+      "Name": "DeckCustom",
+      "IsHidden": true,
+      "Transform": {
+        "posX": -5,
+        "posY": 1,
+        "posZ": -1,
+        "rotX": 0,
+        "rotY": 180,
+        "rotZ": 180,
+        "scaleX": 1,
+        "scaleY": 1,
+        "scaleZ": 1
+      },
+      "Nickname": "Оружие: Топор",
+      "Description": "Стартовая колода: Топор",
+      "CustomDeck": {
+        "1": {
+          "FaceURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/card_images/udar.png?v=1784535043",
+          "BackURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/back_images/card_back.png?v=1784535043",
+          "NumWidth": 1,
+          "NumHeight": 1,
+          "BackIsHidden": true,
+          "UniqueBack": false
+        },
+        "2": {
+          "FaceURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/card_images/sokrushenie.png?v=1784535043",
+          "BackURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/back_images/card_back.png?v=1784535043",
+          "NumWidth": 1,
+          "NumHeight": 1,
+          "BackIsHidden": true,
+          "UniqueBack": false
+        },
+        "3": {
+          "FaceURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/card_images/blok.png?v=1784535043",
+          "BackURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/back_images/card_back.png?v=1784535043",
+          "NumWidth": 1,
+          "NumHeight": 1,
+          "BackIsHidden": true,
+          "UniqueBack": false
+        },
+        "5": {
+          "FaceURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/card_images/uklonenie.png?v=1784535043",
+          "BackURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/back_images/card_back.png?v=1784535043",
+          "NumWidth": 1,
+          "NumHeight": 1,
+          "BackIsHidden": true,
+          "UniqueBack": false
+        },
+        "28": {
+          "FaceURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/card_images/topor.png?v=1784535043",
+          "BackURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/back_images/back_topor.png?v=1784535043",
+          "NumWidth": 1,
+          "NumHeight": 1,
+          "BackIsHidden": true,
+          "UniqueBack": false
+        }
+      },
+      "DeckIDs": [
+        2800,
+        100,
+        100,
+        100,
+        200,
+        200,
+        200,
+        300,
+        300,
+        500,
+        500
+      ],
+      "ContainedObjects": [
+        {
+          "GUID": "F8FB94C715DD",
+          "Name": "Card",
+          "CardID": 2800,
+          "Nickname": "Топор",
+          "Description": "Ваши карты и карты противника не заставляют вас сбрасывать. Усталость работает как обычно.",
+          "XML": "",
+          "LuaScript": "",
+          "Transform": {}
+        },
+        {
+          "GUID": "56722A29F2AD",
+          "Name": "Card",
+          "CardID": 100,
+          "Nickname": "Удар",
+          "Description": "Атака",
+          "XML": "",
+          "LuaScript": "",
+          "Transform": {}
+        },
+        {
+          "GUID": "56722A29F2AD",
+          "Name": "Card",
+          "CardID": 100,
+          "Nickname": "Удар",
+          "Description": "Атака",
+          "XML": "",
+          "LuaScript": "",
+          "Transform": {}
+        },
+        {
+          "GUID": "56722A29F2AD",
+          "Name": "Card",
+          "CardID": 100,
+          "Nickname": "Удар",
+          "Description": "Атака",
+          "XML": "",
+          "LuaScript": "",
+          "Transform": {}
+        },
+        {
+          "GUID": "62157AE1735F",
+          "Name": "Card",
+          "CardID": 200,
+          "Nickname": "Сокрушение",
+          "Description": "Атака. Когда эта карта должна отмениться, вместо этого сбросьте карту",
+          "XML": "",
+          "LuaScript": "",
+          "Transform": {}
+        },
+        {
+          "GUID": "62157AE1735F",
+          "Name": "Card",
+          "CardID": 200,
+          "Nickname": "Сокрушение",
+          "Description": "Атака. Когда эта карта должна отмениться, вместо этого сбросьте карту",
+          "XML": "",
+          "LuaScript": "",
+          "Transform": {}
+        },
+        {
+          "GUID": "62157AE1735F",
+          "Name": "Card",
+          "CardID": 200,
+          "Nickname": "Сокрушение",
+          "Description": "Атака. Когда эта карта должна отмениться, вместо этого сбросьте карту",
+          "XML": "",
+          "LuaScript": "",
+          "Transform": {}
+        },
+        {
+          "GUID": "5B2D1AAAA47D",
+          "Name": "Card",
+          "CardID": 300,
+          "Nickname": "Блок",
+          "Description": "Защита / Восстановите усилие",
+          "XML": "",
+          "LuaScript": "",
+          "Transform": {}
+        },
+        {
+          "GUID": "5B2D1AAAA47D",
+          "Name": "Card",
+          "CardID": 300,
+          "Nickname": "Блок",
+          "Description": "Защита / Восстановите усилие",
+          "XML": "",
+          "LuaScript": "",
+          "Transform": {}
+        },
+        {
+          "GUID": "2DB676846D23",
+          "Name": "Card",
+          "CardID": 500,
+          "Nickname": "Уклонение",
+          "Description": "Приём. Сбросьте эту карту и выбранную карту из вражеской серии. Вытяните новые взамен.",
+          "XML": "",
+          "LuaScript": "",
+          "Transform": {}
+        },
+        {
+          "GUID": "2DB676846D23",
+          "Name": "Card",
+          "CardID": 500,
+          "Nickname": "Уклонение",
+          "Description": "Приём. Сбросьте эту карту и выбранную карту из вражеской серии. Вытяните новые взамен.",
+          "XML": "",
+          "LuaScript": "",
+          "Transform": {}
+        }
+      ]
+    },
+    {
+      "GUID": "E6350C6F5B26",
+      "Name": "DeckCustom",
+      "IsHidden": true,
+      "Transform": {
+        "posX": -5,
+        "posY": 1,
+        "posZ": 1,
+        "rotX": 0,
+        "rotY": 180,
+        "rotZ": 180,
+        "scaleX": 1,
+        "scaleY": 1,
+        "scaleZ": 1
+      },
+      "Nickname": "Оружие: Лук",
+      "Description": "Стартовая колода: Лук",
+      "CustomDeck": {
+        "1": {
+          "FaceURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/card_images/udar.png?v=1784535043",
+          "BackURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/back_images/card_back.png?v=1784535043",
+          "NumWidth": 1,
+          "NumHeight": 1,
+          "BackIsHidden": true,
+          "UniqueBack": false
+        },
+        "5": {
+          "FaceURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/card_images/uklonenie.png?v=1784535043",
+          "BackURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/back_images/card_back.png?v=1784535043",
+          "NumWidth": 1,
+          "NumHeight": 1,
+          "BackIsHidden": true,
+          "UniqueBack": false
+        },
+        "6": {
+          "FaceURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/card_images/fint.png?v=1784535043",
+          "BackURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/back_images/card_back.png?v=1784535043",
+          "NumWidth": 1,
+          "NumHeight": 1,
+          "BackIsHidden": true,
+          "UniqueBack": false
+        },
+        "7": {
+          "FaceURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/card_images/otkhod.png?v=1784535043",
+          "BackURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/back_images/card_back.png?v=1784535043",
+          "NumWidth": 1,
+          "NumHeight": 1,
+          "BackIsHidden": true,
+          "UniqueBack": false
+        },
+        "36": {
+          "FaceURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/card_images/vystrel.png?v=1784535043",
+          "BackURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/back_images/card_back.png?v=1784535043",
+          "NumWidth": 1,
+          "NumHeight": 1,
+          "BackIsHidden": true,
+          "UniqueBack": false
+        },
+        "27": {
+          "FaceURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/card_images/luk.png?v=1784535043",
+          "BackURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/back_images/back_luk.png?v=1784535043",
+          "NumWidth": 1,
+          "NumHeight": 1,
+          "BackIsHidden": true,
+          "UniqueBack": false
+        }
+      },
+      "DeckIDs": [
+        2700,
+        100,
+        100,
+        100,
+        500,
+        500,
+        600,
+        700,
+        700,
+        3600,
+        3600
+      ],
+      "ContainedObjects": [
+        {
+          "GUID": "FA69091EA9A9",
+          "Name": "Card",
+          "CardID": 2700,
+          "Nickname": "Лук",
+          "Description": "В стартовую колоду добавляются 2 Выстрела",
+          "XML": "",
+          "LuaScript": "",
+          "Transform": {}
+        },
+        {
+          "GUID": "AAA6F26C6B7B",
+          "Name": "Card",
+          "CardID": 100,
+          "Nickname": "Удар",
+          "Description": "Атака",
+          "XML": "",
+          "LuaScript": "",
+          "Transform": {}
+        },
+        {
+          "GUID": "AAA6F26C6B7B",
+          "Name": "Card",
+          "CardID": 100,
+          "Nickname": "Удар",
+          "Description": "Атака",
+          "XML": "",
+          "LuaScript": "",
+          "Transform": {}
+        },
+        {
+          "GUID": "AAA6F26C6B7B",
+          "Name": "Card",
+          "CardID": 100,
+          "Nickname": "Удар",
+          "Description": "Атака",
+          "XML": "",
+          "LuaScript": "",
+          "Transform": {}
+        },
+        {
+          "GUID": "03B0BF8A60A4",
+          "Name": "Card",
+          "CardID": 500,
+          "Nickname": "Уклонение",
+          "Description": "Приём. Сбросьте эту карту и выбранную карту из вражеской серии. Вытяните новые взамен.",
+          "XML": "",
+          "LuaScript": "",
+          "Transform": {}
+        },
+        {
+          "GUID": "03B0BF8A60A4",
+          "Name": "Card",
+          "CardID": 500,
+          "Nickname": "Уклонение",
+          "Description": "Приём. Сбросьте эту карту и выбранную карту из вражеской серии. Вытяните новые взамен.",
+          "XML": "",
+          "LuaScript": "",
+          "Transform": {}
+        },
+        {
+          "GUID": "A9AC44602C7A",
+          "Name": "Card",
+          "CardID": 600,
+          "Nickname": "Финт",
+          "Description": "Приём. Скопируйте эффект карты атаки или защиты из вашей серии.",
+          "XML": "",
+          "LuaScript": "",
+          "Transform": {}
+        },
+        {
+          "GUID": "090B94A1E18C",
+          "Name": "Card",
+          "CardID": 700,
+          "Nickname": "Отход",
+          "Description": "Приём. Ваш рыцарь не получает в этот ход больше 1 ранения / Статус.",
+          "XML": "",
+          "LuaScript": "",
+          "Transform": {}
+        },
+        {
+          "GUID": "090B94A1E18C",
+          "Name": "Card",
+          "CardID": 700,
+          "Nickname": "Отход",
+          "Description": "Приём. Ваш рыцарь не получает в этот ход больше 1 ранения / Статус.",
+          "XML": "",
+          "LuaScript": "",
+          "Transform": {}
+        },
+        {
+          "GUID": "398D173F4EC2",
+          "Name": "Card",
+          "CardID": 3600,
+          "Nickname": "Выстрел",
+          "Description": "Атака. Отмените атаку.",
+          "XML": "",
+          "LuaScript": "",
+          "Transform": {}
+        },
+        {
+          "GUID": "398D173F4EC2",
+          "Name": "Card",
+          "CardID": 3600,
+          "Nickname": "Выстрел",
+          "Description": "Атака. Отмените атаку.",
+          "XML": "",
+          "LuaScript": "",
+          "Transform": {}
+        }
+      ]
+    },
+    {
+      "GUID": "4F84D94D5A70",
+      "Name": "DeckCustom",
+      "IsHidden": true,
+      "Transform": {
+        "posX": -5,
+        "posY": 1,
+        "posZ": 3,
+        "rotX": 0,
+        "rotY": 180,
+        "rotZ": 180,
+        "scaleX": 1,
+        "scaleY": 1,
+        "scaleZ": 1
+      },
+      "Nickname": "Оружие: Цеп",
+      "Description": "Стартовая колода: Цеп",
+      "CustomDeck": {
+        "1": {
+          "FaceURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/card_images/udar.png?v=1784535043",
+          "BackURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/back_images/card_back.png?v=1784535043",
+          "NumWidth": 1,
+          "NumHeight": 1,
+          "BackIsHidden": true,
+          "UniqueBack": false
+        },
+        "2": {
+          "FaceURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/card_images/sokrushenie.png?v=1784535043",
+          "BackURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/back_images/card_back.png?v=1784535043",
+          "NumWidth": 1,
+          "NumHeight": 1,
+          "BackIsHidden": true,
+          "UniqueBack": false
+        },
+        "3": {
+          "FaceURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/card_images/blok.png?v=1784535043",
+          "BackURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/back_images/card_back.png?v=1784535043",
+          "NumWidth": 1,
+          "NumHeight": 1,
+          "BackIsHidden": true,
+          "UniqueBack": false
+        },
+        "5": {
+          "FaceURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/card_images/uklonenie.png?v=1784535043",
+          "BackURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/back_images/card_back.png?v=1784535043",
+          "NumWidth": 1,
+          "NumHeight": 1,
+          "BackIsHidden": true,
+          "UniqueBack": false
+        },
+        "7": {
+          "FaceURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/card_images/otkhod.png?v=1784535043",
+          "BackURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/back_images/card_back.png?v=1784535043",
+          "NumWidth": 1,
+          "NumHeight": 1,
+          "BackIsHidden": true,
+          "UniqueBack": false
+        },
+        "6": {
+          "FaceURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/card_images/fint.png?v=1784535043",
+          "BackURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/back_images/card_back.png?v=1784535043",
+          "NumWidth": 1,
+          "NumHeight": 1,
+          "BackIsHidden": true,
+          "UniqueBack": false
+        },
+        "29": {
+          "FaceURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/card_images/tsep.png?v=1784535043",
+          "BackURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/back_images/back_tsep.png?v=1784535043",
+          "NumWidth": 1,
+          "NumHeight": 1,
+          "BackIsHidden": true,
+          "UniqueBack": false
+        }
+      },
+      "DeckIDs": [
+        2900,
+        100,
+        100,
+        100,
+        200,
+        200,
+        300,
+        300,
+        500,
+        700,
+        600
+      ],
+      "ContainedObjects": [
+        {
+          "GUID": "C9EAF14E8545",
+          "Name": "Card",
+          "CardID": 2900,
+          "Nickname": "Цеп",
+          "Description": "Нанеся ранение, принудительно сбросьте 1 карту у врага",
+          "XML": "",
+          "LuaScript": "",
+          "Transform": {}
+        },
+        {
+          "GUID": "480AD0529D4D",
+          "Name": "Card",
+          "CardID": 100,
+          "Nickname": "Удар",
+          "Description": "Атака",
+          "XML": "",
+          "LuaScript": "",
+          "Transform": {}
+        },
+        {
+          "GUID": "480AD0529D4D",
+          "Name": "Card",
+          "CardID": 100,
+          "Nickname": "Удар",
+          "Description": "Атака",
+          "XML": "",
+          "LuaScript": "",
+          "Transform": {}
+        },
+        {
+          "GUID": "480AD0529D4D",
+          "Name": "Card",
+          "CardID": 100,
+          "Nickname": "Удар",
+          "Description": "Атака",
+          "XML": "",
+          "LuaScript": "",
+          "Transform": {}
+        },
+        {
+          "GUID": "D4C1D84B3E95",
+          "Name": "Card",
+          "CardID": 200,
+          "Nickname": "Сокрушение",
+          "Description": "Атака. Когда эта карта должна отмениться, вместо этого сбросьте карту",
+          "XML": "",
+          "LuaScript": "",
+          "Transform": {}
+        },
+        {
+          "GUID": "D4C1D84B3E95",
+          "Name": "Card",
+          "CardID": 200,
+          "Nickname": "Сокрушение",
+          "Description": "Атака. Когда эта карта должна отмениться, вместо этого сбросьте карту",
+          "XML": "",
+          "LuaScript": "",
+          "Transform": {}
+        },
+        {
+          "GUID": "4D28145A8766",
+          "Name": "Card",
+          "CardID": 300,
+          "Nickname": "Блок",
+          "Description": "Защита / Восстановите усилие",
+          "XML": "",
+          "LuaScript": "",
+          "Transform": {}
+        },
+        {
+          "GUID": "4D28145A8766",
+          "Name": "Card",
+          "CardID": 300,
+          "Nickname": "Блок",
+          "Description": "Защита / Восстановите усилие",
+          "XML": "",
+          "LuaScript": "",
+          "Transform": {}
+        },
+        {
+          "GUID": "85EC608C7218",
+          "Name": "Card",
+          "CardID": 500,
+          "Nickname": "Уклонение",
+          "Description": "Приём. Сбросьте эту карту и выбранную карту из вражеской серии. Вытяните новые взамен.",
+          "XML": "",
+          "LuaScript": "",
+          "Transform": {}
+        },
+        {
+          "GUID": "19BB4685A8B2",
+          "Name": "Card",
+          "CardID": 700,
+          "Nickname": "Отход",
+          "Description": "Приём. Ваш рыцарь не получает в этот ход больше 1 ранения / Статус.",
+          "XML": "",
+          "LuaScript": "",
+          "Transform": {}
+        },
+        {
+          "GUID": "737B93CAAD13",
+          "Name": "Card",
+          "CardID": 600,
+          "Nickname": "Финт",
+          "Description": "Приём. Скопируйте эффект карты атаки или защиты из вашей серии.",
+          "XML": "",
+          "LuaScript": "",
+          "Transform": {}
+        }
+      ]
+    },
+    {
+      "GUID": "DB94FFA1810D",
+      "Name": "DeckCustom",
+      "IsHidden": true,
+      "Transform": {
+        "posX": -5,
+        "posY": 1,
+        "posZ": 5,
+        "rotX": 0,
+        "rotY": 180,
+        "rotZ": 180,
+        "scaleX": 1,
+        "scaleY": 1,
+        "scaleZ": 1
+      },
+      "Nickname": "Оружие: Трезубец",
+      "Description": "Стартовая колода: Трезубец",
+      "CustomDeck": {
+        "1": {
+          "FaceURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/card_images/udar.png?v=1784535043",
+          "BackURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/back_images/card_back.png?v=1784535043",
+          "NumWidth": 1,
+          "NumHeight": 1,
+          "BackIsHidden": true,
+          "UniqueBack": false
+        },
+        "3": {
+          "FaceURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/card_images/blok.png?v=1784535043",
+          "BackURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/back_images/card_back.png?v=1784535043",
+          "NumWidth": 1,
+          "NumHeight": 1,
+          "BackIsHidden": true,
+          "UniqueBack": false
+        },
+        "2": {
+          "FaceURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/card_images/sokrushenie.png?v=1784535043",
+          "BackURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/back_images/card_back.png?v=1784535043",
+          "NumWidth": 1,
+          "NumHeight": 1,
+          "BackIsHidden": true,
+          "UniqueBack": false
+        },
+        "7": {
+          "FaceURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/card_images/otkhod.png?v=1784535043",
+          "BackURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/back_images/card_back.png?v=1784535043",
+          "NumWidth": 1,
+          "NumHeight": 1,
+          "BackIsHidden": true,
+          "UniqueBack": false
+        },
+        "5": {
+          "FaceURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/card_images/uklonenie.png?v=1784535043",
+          "BackURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/back_images/card_back.png?v=1784535043",
+          "NumWidth": 1,
+          "NumHeight": 1,
+          "BackIsHidden": true,
+          "UniqueBack": false
+        },
+        "30": {
+          "FaceURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/card_images/trezubec.png?v=1784535043",
+          "BackURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/back_images/back_trezubec.png?v=1784535043",
+          "NumWidth": 1,
+          "NumHeight": 1,
+          "BackIsHidden": true,
+          "UniqueBack": false
+        }
+      },
+      "DeckIDs": [
+        3000,
+        100,
+        100,
+        100,
+        300,
+        300,
+        200,
+        700,
+        700,
+        500,
+        500
+      ],
+      "ContainedObjects": [
+        {
+          "GUID": "3B24FC67A0D3",
+          "Name": "Card",
+          "CardID": 3000,
+          "Nickname": "Трезубец",
+          "Description": "Вы всегда ходите первым в раунде",
+          "XML": "",
+          "LuaScript": "",
+          "Transform": {}
+        },
+        {
+          "GUID": "558D03156AAE",
+          "Name": "Card",
+          "CardID": 100,
+          "Nickname": "Удар",
+          "Description": "Атака",
+          "XML": "",
+          "LuaScript": "",
+          "Transform": {}
+        },
+        {
+          "GUID": "558D03156AAE",
+          "Name": "Card",
+          "CardID": 100,
+          "Nickname": "Удар",
+          "Description": "Атака",
+          "XML": "",
+          "LuaScript": "",
+          "Transform": {}
+        },
+        {
+          "GUID": "558D03156AAE",
+          "Name": "Card",
+          "CardID": 100,
+          "Nickname": "Удар",
+          "Description": "Атака",
+          "XML": "",
+          "LuaScript": "",
+          "Transform": {}
+        },
+        {
+          "GUID": "16828089E812",
+          "Name": "Card",
+          "CardID": 300,
+          "Nickname": "Блок",
+          "Description": "Защита / Восстановите усилие",
+          "XML": "",
+          "LuaScript": "",
+          "Transform": {}
+        },
+        {
+          "GUID": "16828089E812",
+          "Name": "Card",
+          "CardID": 300,
+          "Nickname": "Блок",
+          "Description": "Защита / Восстановите усилие",
+          "XML": "",
+          "LuaScript": "",
+          "Transform": {}
+        },
+        {
+          "GUID": "58D6C24D2A8A",
+          "Name": "Card",
+          "CardID": 200,
+          "Nickname": "Сокрушение",
+          "Description": "Атака. Когда эта карта должна отмениться, вместо этого сбросьте карту",
+          "XML": "",
+          "LuaScript": "",
+          "Transform": {}
+        },
+        {
+          "GUID": "6EC6AB75DB56",
+          "Name": "Card",
+          "CardID": 700,
+          "Nickname": "Отход",
+          "Description": "Приём. Ваш рыцарь не получает в этот ход больше 1 ранения / Статус.",
+          "XML": "",
+          "LuaScript": "",
+          "Transform": {}
+        },
+        {
+          "GUID": "6EC6AB75DB56",
+          "Name": "Card",
+          "CardID": 700,
+          "Nickname": "Отход",
+          "Description": "Приём. Ваш рыцарь не получает в этот ход больше 1 ранения / Статус.",
+          "XML": "",
+          "LuaScript": "",
+          "Transform": {}
+        },
+        {
+          "GUID": "B1392092F745",
+          "Name": "Card",
+          "CardID": 500,
+          "Nickname": "Уклонение",
+          "Description": "Приём. Сбросьте эту карту и выбранную карту из вражеской серии. Вытяните новые взамен.",
+          "XML": "",
+          "LuaScript": "",
+          "Transform": {}
+        },
+        {
+          "GUID": "B1392092F745",
+          "Name": "Card",
+          "CardID": 500,
+          "Nickname": "Уклонение",
+          "Description": "Приём. Сбросьте эту карту и выбранную карту из вражеской серии. Вытяните новые взамен.",
+          "XML": "",
+          "LuaScript": "",
+          "Transform": {}
+        }
+      ]
+    },
+    {
+      "GUID": "7BE0E7A191D4",
+      "Name": "DeckCustom",
+      "IsHidden": true,
+      "Transform": {
+        "posX": 0,
+        "posY": 1,
+        "posZ": 6,
+        "rotX": 0,
+        "rotY": 180,
+        "rotZ": 180,
+        "scaleX": 0.28,
+        "scaleY": 0.28,
+        "scaleZ": 0.28
+      },
+      "Nickname": "Титулы",
+      "Description": "Префиксы и постфиксы",
+      "CustomDeck": {
+        "42": {
+          "FaceURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/title_images/legendarny.png?v=1784535043",
+          "BackURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/back_images/title_back.png?v=1784535043",
+          "NumWidth": 1,
+          "NumHeight": 1,
+          "BackIsHidden": true,
+          "UniqueBack": false
+        },
+        "43": {
+          "FaceURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/title_images/bozhestvenny.png?v=1784535043",
+          "BackURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/back_images/title_back.png?v=1784535043",
+          "NumWidth": 1,
+          "NumHeight": 1,
+          "BackIsHidden": true,
+          "UniqueBack": false
+        },
+        "44": {
+          "FaceURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/title_images/vostry.png?v=1784535043",
+          "BackURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/back_images/title_back.png?v=1784535043",
+          "NumWidth": 1,
+          "NumHeight": 1,
+          "BackIsHidden": true,
+          "UniqueBack": false
+        },
+        "45": {
+          "FaceURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/title_images/gigantsky.png?v=1784535043",
+          "BackURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/back_images/title_back.png?v=1784535043",
+          "NumWidth": 1,
+          "NumHeight": 1,
+          "BackIsHidden": true,
+          "UniqueBack": false
+        },
+        "46": {
+          "FaceURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/title_images/magichesky.png?v=1784535043",
+          "BackURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/back_images/title_back.png?v=1784535043",
+          "NumWidth": 1,
+          "NumHeight": 1,
+          "BackIsHidden": true,
+          "UniqueBack": false
+        },
+        "47": {
+          "FaceURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/title_images/sverkhzvukovoy.png?v=1784535043",
+          "BackURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/back_images/title_back.png?v=1784535043",
+          "NumWidth": 1,
+          "NumHeight": 1,
+          "BackIsHidden": true,
+          "UniqueBack": false
+        },
+        "48": {
+          "FaceURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/title_images/protivotankovy.png?v=1784535043",
+          "BackURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/back_images/title_back.png?v=1784535043",
+          "NumWidth": 1,
+          "NumHeight": 1,
+          "BackIsHidden": true,
+          "UniqueBack": false
+        },
+        "49": {
+          "FaceURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/title_images/elektrichesky.png?v=1784535043",
+          "BackURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/back_images/title_back.png?v=1784535043",
+          "NumWidth": 1,
+          "NumHeight": 1,
+          "BackIsHidden": true,
+          "UniqueBack": false
+        },
+        "50": {
+          "FaceURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/title_images/ognenny.png?v=1784535043",
+          "BackURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/back_images/title_back.png?v=1784535043",
+          "NumWidth": 1,
+          "NumHeight": 1,
+          "BackIsHidden": true,
+          "UniqueBack": false
+        },
+        "51": {
+          "FaceURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/title_images/razumny.png?v=1784535043",
+          "BackURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/back_images/title_back.png?v=1784535043",
+          "NumWidth": 1,
+          "NumHeight": 1,
+          "BackIsHidden": true,
+          "UniqueBack": false
+        },
+        "52": {
+          "FaceURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/title_images/uzhasny.png?v=1784535043",
+          "BackURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/back_images/title_back.png?v=1784535043",
+          "NumWidth": 1,
+          "NumHeight": 1,
+          "BackIsHidden": true,
+          "UniqueBack": false
+        },
+        "53": {
+          "FaceURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/title_images/psionichesky.png?v=1784535043",
+          "BackURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/back_images/title_back.png?v=1784535043",
+          "NumWidth": 1,
+          "NumHeight": 1,
+          "BackIsHidden": true,
+          "UniqueBack": false
+        },
+        "54": {
+          "FaceURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/title_images/khronoturgichesky.png?v=1784535043",
+          "BackURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/back_images/title_back.png?v=1784535043",
+          "NumWidth": 1,
+          "NumHeight": 1,
+          "BackIsHidden": true,
+          "UniqueBack": false
+        },
+        "55": {
+          "FaceURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/title_images/korolya.png?v=1784535043",
+          "BackURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/back_images/title_back.png?v=1784535043",
+          "NumWidth": 1,
+          "NumHeight": 1,
+          "BackIsHidden": true,
+          "UniqueBack": false
+        },
+        "56": {
+          "FaceURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/title_images/artura.png?v=1784535043",
+          "BackURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/back_images/title_back.png?v=1784535043",
+          "NumWidth": 1,
+          "NumHeight": 1,
+          "BackIsHidden": true,
+          "UniqueBack": false
+        },
+        "57": {
+          "FaceURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/title_images/titana.png?v=1784535043",
+          "BackURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/back_images/title_back.png?v=1784535043",
+          "NumWidth": 1,
+          "NumHeight": 1,
+          "BackIsHidden": true,
+          "UniqueBack": false
+        },
+        "58": {
+          "FaceURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/title_images/uzhasov.png?v=1784535043",
+          "BackURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/back_images/title_back.png?v=1784535043",
+          "NumWidth": 1,
+          "NumHeight": 1,
+          "BackIsHidden": true,
+          "UniqueBack": false
+        },
+        "59": {
+          "FaceURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/title_images/angela.png?v=1784535043",
+          "BackURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/back_images/title_back.png?v=1784535043",
+          "NumWidth": 1,
+          "NumHeight": 1,
+          "BackIsHidden": true,
+          "UniqueBack": false
+        },
+        "60": {
+          "FaceURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/title_images/dzhinna.png?v=1784535043",
+          "BackURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/back_images/title_back.png?v=1784535043",
+          "NumWidth": 1,
+          "NumHeight": 1,
+          "BackIsHidden": true,
+          "UniqueBack": false
+        },
+        "61": {
+          "FaceURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/title_images/zevsa.png?v=1784535043",
+          "BackURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/back_images/title_back.png?v=1784535043",
+          "NumWidth": 1,
+          "NumHeight": 1,
+          "BackIsHidden": true,
+          "UniqueBack": false
+        },
+        "62": {
+          "FaceURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/title_images/mastera.png?v=1784535043",
+          "BackURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/back_images/title_back.png?v=1784535043",
+          "NumWidth": 1,
+          "NumHeight": 1,
+          "BackIsHidden": true,
+          "UniqueBack": false
+        },
+        "63": {
+          "FaceURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/title_images/licha.png?v=1784535043",
+          "BackURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/back_images/title_back.png?v=1784535043",
+          "NumWidth": 1,
+          "NumHeight": 1,
+          "BackIsHidden": true,
+          "UniqueBack": false
+        },
+        "64": {
+          "FaceURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/title_images/khitretsa.png?v=1784535043",
+          "BackURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/back_images/title_back.png?v=1784535043",
+          "NumWidth": 1,
+          "NumHeight": 1,
+          "BackIsHidden": true,
+          "UniqueBack": false
+        }
+      },
+      "DeckIDs": [
+        4200,
+        4300,
+        4400,
+        4500,
+        4600,
+        4700,
+        4800,
+        4900,
+        5000,
+        5100,
+        5200,
+        5300,
+        5400,
+        5500,
+        5600,
+        5700,
+        5800,
+        5900,
+        6000,
+        6100,
+        6200,
+        6300,
+        6400
+      ],
+      "ContainedObjects": [
+        {
+          "GUID": "8C81FED94097",
+          "Name": "Card",
+          "CardID": 4200,
+          "Nickname": "Легендарный",
+          "Description": "Когда вы выбираете оруженосца, выберите одного из четырёх",
+          "XML": "",
+          "LuaScript": "",
+          "Transform": {}
+        },
+        {
+          "GUID": "CC9781C5D318",
+          "Name": "Card",
+          "CardID": 4300,
+          "Nickname": "Божественный",
+          "Description": "Положите в колоду 1 Милость божья",
+          "XML": "",
+          "LuaScript": "",
+          "Transform": {}
+        },
+        {
+          "GUID": "9A37B25FD9E9",
+          "Name": "Card",
+          "CardID": 4400,
+          "Nickname": "Вострый",
+          "Description": "Если в серии нет карты Атаки, вытяните карту.",
+          "XML": "",
+          "LuaScript": "",
+          "Transform": {}
+        },
+        {
+          "GUID": "07A8050F928A",
+          "Name": "Card",
+          "CardID": 4500,
+          "Nickname": "Гигантский",
+          "Description": "Первая карта в серии не отменяется",
+          "XML": "",
+          "LuaScript": "",
+          "Transform": {}
+        },
+        {
+          "GUID": "2455C9FFF6AB",
+          "Name": "Card",
+          "CardID": 4600,
+          "Nickname": "Магический",
+          "Description": "Положите в колоду 2 Чары и 2 Концентрации",
+          "XML": "",
+          "LuaScript": "",
+          "Transform": {}
+        },
+        {
+          "GUID": "E1958627EEF1",
+          "Name": "Card",
+          "CardID": 4700,
+          "Nickname": "Сверхзвуковой",
+          "Description": "Положите в колоду 2 Допинга",
+          "XML": "",
+          "LuaScript": "",
+          "Transform": {}
+        },
+        {
+          "GUID": "37A283596CF1",
+          "Name": "Card",
+          "CardID": 4800,
+          "Nickname": "Противотанковый",
+          "Description": "После выкладывания серии можете отменить одну защиту врага",
+          "XML": "",
+          "LuaScript": "",
+          "Transform": {}
+        },
+        {
+          "GUID": "22B66277F89C",
+          "Name": "Card",
+          "CardID": 4900,
+          "Nickname": "Электрический",
+          "Description": "Нанося травму, вы раните оруженосца врага",
+          "XML": "",
+          "LuaScript": "",
+          "Transform": {}
+        },
+        {
+          "GUID": "97EB22EB7CC8",
+          "Name": "Card",
+          "CardID": 5000,
+          "Nickname": "Огненный",
+          "Description": "Положите в колоду 2 Взрыва",
+          "XML": "",
+          "LuaScript": "",
+          "Transform": {}
+        },
+        {
+          "GUID": "63C4C7D85651",
+          "Name": "Card",
+          "CardID": 5100,
+          "Nickname": "Разумный",
+          "Description": "+2 усилия",
+          "XML": "",
+          "LuaScript": "",
+          "Transform": {}
+        },
+        {
+          "GUID": "3C818FA04488",
+          "Name": "Card",
+          "CardID": 5200,
+          "Nickname": "Ужасный",
+          "Description": "Добавляя усталость в колоду, враг добавляет на 1 больше",
+          "XML": "",
+          "LuaScript": "",
+          "Transform": {}
+        },
+        {
+          "GUID": "8B59FC989992",
+          "Name": "Card",
+          "CardID": 5300,
+          "Nickname": "Псионический",
+          "Description": "Положите в колоду 2 Подчинения",
+          "XML": "",
+          "LuaScript": "",
+          "Transform": {}
+        },
+        {
+          "GUID": "CF283B622253",
+          "Name": "Card",
+          "CardID": 5400,
+          "Nickname": "Хронотургический",
+          "Description": "Положите в колоду 1 Временной сдвиг",
+          "XML": "",
+          "LuaScript": "",
+          "Transform": {}
+        },
+        {
+          "GUID": "6DC607F19825",
+          "Name": "Card",
+          "CardID": 5500,
+          "Nickname": "Короля",
+          "Description": "Вы можете иметь двух оруженосцев сразу",
+          "XML": "",
+          "LuaScript": "",
+          "Transform": {}
+        },
+        {
+          "GUID": "3694A7433D30",
+          "Name": "Card",
+          "CardID": 5600,
+          "Nickname": "Артура",
+          "Description": "Положите в колоду 3 Удара Грааля",
+          "XML": "",
+          "LuaScript": "",
+          "Transform": {}
+        },
+        {
+          "GUID": "A7031D800AA9",
+          "Name": "Card",
+          "CardID": 5700,
+          "Nickname": "Титана",
+          "Description": "Рыцарь отъезжает только получив третью травму.",
+          "XML": "",
+          "LuaScript": "",
+          "Transform": {}
+        },
+        {
+          "GUID": "2D5E75137430",
+          "Name": "Card",
+          "CardID": 5800,
+          "Nickname": "Ужасов",
+          "Description": "В начале боя замешайте 2 усталости в колоду врага",
+          "XML": "",
+          "LuaScript": "",
+          "Transform": {}
+        },
+        {
+          "GUID": "EC9ACDDD7C1F",
+          "Name": "Card",
+          "CardID": 5900,
+          "Nickname": "Ангела",
+          "Description": "Положите 3 Вспышки в колоду",
+          "XML": "",
+          "LuaScript": "",
+          "Transform": {}
+        },
+        {
+          "GUID": "576F427D3236",
+          "Name": "Card",
+          "CardID": 6000,
+          "Nickname": "Джинна",
+          "Description": "Сбросьте титул в начале любого боя. Возьмите 2 награды из пула наград",
+          "XML": "",
+          "LuaScript": "",
+          "Transform": {}
+        },
+        {
+          "GUID": "B2C6AAF01B6B",
+          "Name": "Card",
+          "CardID": 6100,
+          "Nickname": "Зевса",
+          "Description": "Положите 2 Шторма в колоду",
+          "XML": "",
+          "LuaScript": "",
+          "Transform": {}
+        },
+        {
+          "GUID": "E779611B4A3F",
+          "Name": "Card",
+          "CardID": 6200,
+          "Nickname": "Мастера",
+          "Description": "Карты, взятые из сброса, кладутся сверху колоды",
+          "XML": "",
+          "LuaScript": "",
+          "Transform": {}
+        },
+        {
+          "GUID": "67518904D254",
+          "Name": "Card",
+          "CardID": 6300,
+          "Nickname": "Лича",
+          "Description": "Карта усталости в серии врага считается Атакой от вас",
+          "XML": "",
+          "LuaScript": "",
+          "Transform": {}
+        },
+        {
+          "GUID": "1A7270A09571",
+          "Name": "Card",
+          "CardID": 6400,
+          "Nickname": "Хитреца",
+          "Description": "Выложив серию, вы сразу можете поменять одну карту в ней.",
+          "XML": "",
+          "LuaScript": "",
+          "Transform": {}
+        }
+      ]
+    },
+    {
+      "GUID": "54C402C7A3AA",
+      "Name": "DeckCustom",
+      "IsHidden": true,
+      "Transform": {
+        "posX": 0,
+        "posY": 1,
+        "posZ": 8,
+        "rotX": 0,
+        "rotY": 180,
+        "rotZ": 180,
+        "scaleX": 1,
+        "scaleY": 1,
+        "scaleZ": 1
+      },
+      "Nickname": "Идиоты",
+      "Description": "Оруженосец / Рыцарь — переверните карту",
+      "CustomDeck": {
+        "70": {
+          "FaceURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/card_images/detina.png?v=1784535043",
+          "BackURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/back_images/back_idiot.png?v=1784535043",
+          "NumWidth": 1,
+          "NumHeight": 1,
+          "BackIsHidden": true,
+          "UniqueBack": false
+        },
+        "71": {
+          "FaceURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/card_images/golubokrovka.png?v=1784535043",
+          "BackURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/back_images/back_idiot.png?v=1784535043",
+          "NumWidth": 1,
+          "NumHeight": 1,
+          "BackIsHidden": true,
+          "UniqueBack": false
+        },
+        "72": {
+          "FaceURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/card_images/bukvoed.png?v=1784535043",
+          "BackURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/back_images/back_idiot.png?v=1784535043",
+          "NumWidth": 1,
+          "NumHeight": 1,
+          "BackIsHidden": true,
+          "UniqueBack": false
+        },
+        "73": {
+          "FaceURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/card_images/pohititel_kur.png?v=1784535043",
+          "BackURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/back_images/back_idiot.png?v=1784535043",
+          "NumWidth": 1,
+          "NumHeight": 1,
+          "BackIsHidden": true,
+          "UniqueBack": false
+        },
+        "74": {
+          "FaceURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/card_images/bolshun.png?v=1784535043",
+          "BackURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/back_images/back_idiot.png?v=1784535043",
+          "NumWidth": 1,
+          "NumHeight": 1,
+          "BackIsHidden": true,
+          "UniqueBack": false
+        },
+        "75": {
+          "FaceURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/card_images/charoplyuy.png?v=1784535043",
+          "BackURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/back_images/back_idiot.png?v=1784535043",
+          "NumWidth": 1,
+          "NumHeight": 1,
+          "BackIsHidden": true,
+          "UniqueBack": false
+        },
+        "76": {
+          "FaceURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/card_images/geroy_provincii.png?v=1784535043",
+          "BackURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/back_images/back_idiot.png?v=1784535043",
+          "NumWidth": 1,
+          "NumHeight": 1,
+          "BackIsHidden": true,
+          "UniqueBack": false
+        },
+        "77": {
+          "FaceURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/card_images/monashka.png?v=1784535043",
+          "BackURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/back_images/back_idiot.png?v=1784535043",
+          "NumWidth": 1,
+          "NumHeight": 1,
+          "BackIsHidden": true,
+          "UniqueBack": false
+        },
+        "78": {
+          "FaceURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/card_images/zveryuga.png?v=1784535043",
+          "BackURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/back_images/back_idiot.png?v=1784535043",
+          "NumWidth": 1,
+          "NumHeight": 1,
+          "BackIsHidden": true,
+          "UniqueBack": false
+        },
+        "79": {
+          "FaceURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/card_images/nachinayushchiy_zlodey.png?v=1784535043",
+          "BackURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/back_images/back_idiot.png?v=1784535043",
+          "NumWidth": 1,
+          "NumHeight": 1,
+          "BackIsHidden": true,
+          "UniqueBack": false
+        },
+        "80": {
+          "FaceURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/card_images/punchuga.png?v=1784535043",
+          "BackURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/back_images/back_idiot.png?v=1784535043",
+          "NumWidth": 1,
+          "NumHeight": 1,
+          "BackIsHidden": true,
+          "UniqueBack": false
+        },
+        "81": {
+          "FaceURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/card_images/nagadatel.png?v=1784535043",
+          "BackURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/back_images/back_idiot.png?v=1784535043",
+          "NumWidth": 1,
+          "NumHeight": 1,
+          "BackIsHidden": true,
+          "UniqueBack": false
+        },
+        "82": {
+          "FaceURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/card_images/lyubitel_kustov.png?v=1784535043",
+          "BackURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/back_images/back_idiot.png?v=1784535043",
+          "NumWidth": 1,
+          "NumHeight": 1,
+          "BackIsHidden": true,
+          "UniqueBack": false
+        },
+        "83": {
+          "FaceURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/card_images/karga.png?v=1784535043",
+          "BackURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/back_images/back_idiot.png?v=1784535043",
+          "NumWidth": 1,
+          "NumHeight": 1,
+          "BackIsHidden": true,
+          "UniqueBack": false
+        },
+        "84": {
+          "FaceURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/card_images/tsarek.png?v=1784535043",
+          "BackURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/back_images/back_idiot.png?v=1784535043",
+          "NumWidth": 1,
+          "NumHeight": 1,
+          "BackIsHidden": true,
+          "UniqueBack": false
+        },
+        "85": {
+          "FaceURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/card_images/pyatikluchatel.png?v=1784535043",
+          "BackURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/back_images/back_idiot.png?v=1784535043",
+          "NumWidth": 1,
+          "NumHeight": 1,
+          "BackIsHidden": true,
+          "UniqueBack": false
+        },
+        "86": {
+          "FaceURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/card_images/golyanochka.png?v=1784535043",
+          "BackURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/back_images/back_idiot.png?v=1784535043",
+          "NumWidth": 1,
+          "NumHeight": 1,
+          "BackIsHidden": true,
+          "UniqueBack": false
+        },
+        "87": {
+          "FaceURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/card_images/mstyun.png?v=1784535043",
+          "BackURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/back_images/back_idiot.png?v=1784535043",
+          "NumWidth": 1,
+          "NumHeight": 1,
+          "BackIsHidden": true,
+          "UniqueBack": false
+        }
+      },
+      "DeckIDs": [
+        7000,
+        7100,
+        7200,
+        7300,
+        7400,
+        7500,
+        7600,
+        7700,
+        7800,
+        7900,
+        8000,
+        8100,
+        8200,
+        8300,
+        8400,
+        8500,
+        8600,
+        8700
+      ],
+      "ContainedObjects": [
+        {
+          "GUID": "277DFF4ACEC5",
+          "Name": "Card",
+          "CardID": 7000,
+          "Nickname": "Детина",
+          "Description": "Оруженосец: Кладите на 1 усталость меньше в колоду.\nРыцарь: Впервые за бой получая травму, сразу сбросьте её.",
+          "XML": "",
+          "LuaScript": "",
+          "Transform": {}
+        },
+        {
+          "GUID": "62A1013BA978",
+          "Name": "Card",
+          "CardID": 7100,
+          "Nickname": "Голубокровка",
+          "Description": "Оруженосец: За 1 усилие положите карту под низ колоды, вместо сброса.\nРыцарь: Делая выводы, кладите карту на верх своей колоды.",
+          "XML": "",
+          "LuaScript": "",
+          "Transform": {}
+        },
+        {
+          "GUID": "09871217DDAA",
+          "Name": "Card",
+          "CardID": 7200,
+          "Nickname": "Буквоед",
+          "Description": "Оруженосец: +1 усилие\nРыцарь: нет",
+          "XML": "",
+          "LuaScript": "",
+          "Transform": {}
+        },
+        {
+          "GUID": "003978C189E0",
+          "Name": "Card",
+          "CardID": 7300,
+          "Nickname": "Похититель кур",
+          "Description": "Оруженосец: Положите 1 Отход в колоду.\nРыцарь: Положите 2 Подражания в колоду.",
+          "XML": "",
+          "LuaScript": "",
+          "Transform": {}
+        },
+        {
+          "GUID": "82AF9B3C0461",
+          "Name": "Card",
+          "CardID": 7400,
+          "Nickname": "Большун",
+          "Description": "Оруженосец: Положите 1 Блок в колоду.\nРыцарь: Первая ваша травма не приносит эффекта.",
+          "XML": "",
+          "LuaScript": "",
+          "Transform": {}
+        },
+        {
+          "GUID": "3044E55F7148",
+          "Name": "Card",
+          "CardID": 7500,
+          "Nickname": "Чароплюй",
+          "Description": "Оруженосец: Положите 1 Концентрацию в колоду.\nРыцарь: Положите 2 Чары в колоду.",
+          "XML": "",
+          "LuaScript": "",
+          "Transform": {}
+        },
+        {
+          "GUID": "897D8DB01F01",
+          "Name": "Card",
+          "CardID": 7600,
+          "Nickname": "Герой из провинции",
+          "Description": "Оруженосец: Если рыцарь должен отъехать, вместо него отъезжает Герой.\nРыцарь: Когда у вас две травмы, вы получаете +1 к серии",
+          "XML": "",
+          "LuaScript": "",
+          "Transform": {}
+        },
+        {
+          "GUID": "F12A2E94B2B8",
+          "Name": "Card",
+          "CardID": 7700,
+          "Nickname": "Монашка",
+          "Description": "Оруженосец: +1 усилие\nРыцарь: Положите 2 Концентрации в колоду",
+          "XML": "",
+          "LuaScript": "",
+          "Transform": {}
+        },
+        {
+          "GUID": "360094FB9B9E",
+          "Name": "Card",
+          "CardID": 7800,
+          "Nickname": "Зверюга",
+          "Description": "Оруженосец: нет\nРыцарь: Положите 2 Укуса в колоду.",
+          "XML": "",
+          "LuaScript": "",
+          "Transform": {}
+        },
+        {
+          "GUID": "D92BE5C2D7ED",
+          "Name": "Card",
+          "CardID": 7900,
+          "Nickname": "Начинающий злодей",
+          "Description": "Оруженосец: Положите 1 Подлость в колоду\nРыцарь: Когда вы впервые за бой ранены, замешайте усталость врагу",
+          "XML": "",
+          "LuaScript": "",
+          "Transform": {}
+        },
+        {
+          "GUID": "EC0D9C6C906F",
+          "Name": "Card",
+          "CardID": 8000,
+          "Nickname": "Пьянчуга",
+          "Description": "Оруженосец: Один раз за бой вы можете отменить сброс ваших карт в ходу\nРыцарь: Положите 2 Допинга в колоду",
+          "XML": "",
+          "LuaScript": "",
+          "Transform": {}
+        },
+        {
+          "GUID": "0ED2C3E24DF2",
+          "Name": "Card",
+          "CardID": 8100,
+          "Nickname": "Нагадатель",
+          "Description": "Оруженосец: Получая травму, выбирайте 1 из двух.\nРыцарь: Выкладывая серию, тяните на 1 карту больше. После выберите одну карту и замешайте её обратно.",
+          "XML": "",
+          "LuaScript": "",
+          "Transform": {}
+        },
+        {
+          "GUID": "C8C3BFE57D88",
+          "Name": "Card",
+          "CardID": 8200,
+          "Nickname": "Любитель кустов",
+          "Description": "Оруженосец: Положите 1 Засаду в колоду.\nРыцарь: Положите 1 Сила леса в колоду.",
+          "XML": "",
+          "LuaScript": "",
+          "Transform": {}
+        },
+        {
+          "GUID": "371EB314F32A",
+          "Name": "Card",
+          "CardID": 8300,
+          "Nickname": "Карга",
+          "Description": "Оруженосец: Соперник кладёт на 1 усталость больше, когда утомляется\nРыцарь: Положите 2 Проклятия в колоду.",
+          "XML": "",
+          "LuaScript": "",
+          "Transform": {}
+        },
+        {
+          "GUID": "5701E5AB7EE9",
+          "Name": "Card",
+          "CardID": 8400,
+          "Nickname": "Царёк",
+          "Description": "Оруженосец: Когда становится рыцарем, может выбрать одного из трёх оруженосцев.\nРыцарь: Первая ваша травма за бой переносится на оруженосца",
+          "XML": "",
+          "LuaScript": "",
+          "Transform": {}
+        },
+        {
+          "GUID": "EFACC633AAF3",
+          "Name": "Card",
+          "CardID": 8500,
+          "Nickname": "5риключатель",
+          "Description": "Оруженосец: Когда становится рыцарем, отправьте верхнего оруженосца в зал бесславья.\nРыцарь: (чё-то на улучшение междрачного взамодействия в обмен на травму)",
+          "XML": "",
+          "LuaScript": "",
+          "Transform": {}
+        },
+        {
+          "GUID": "C66D84288A04",
+          "Name": "Card",
+          "CardID": 8600,
+          "Nickname": "Готяночка",
+          "Description": "Оруженосец: Когда становится рыцарем, выбирает оруженосца из зала бесславья\nРыцарь: Положите 1 Проклятие и 1 Укол в колоду.",
+          "XML": "",
+          "LuaScript": "",
+          "Transform": {}
+        },
+        {
+          "GUID": "FE47A592B9FF",
+          "Name": "Card",
+          "CardID": 8700,
+          "Nickname": "Мстюн",
+          "Description": "Оруженосец: Когда становится рыцарем, убивает оруженосца соперника. Он может сразу выбрать нового.\nРыцарь: Положите 2 Ярости в колоду.",
+          "XML": "",
+          "LuaScript": "",
+          "Transform": {}
+        }
+      ]
+    },
+    {
+      "GUID": "A63F989C7402",
+      "Name": "DeckCustom",
+      "IsHidden": true,
+      "Transform": {
+        "posX": 6,
+        "posY": 1,
+        "posZ": 0,
+        "rotX": 0,
+        "rotY": 180,
+        "rotZ": 180,
+        "scaleX": 0.7,
+        "scaleY": 0.7,
+        "scaleZ": 0.7
+      },
+      "Nickname": "Травмы",
+      "Description": "Сломанное ребро, Грусть, Головокружение, Обида, Пьянство, Рукоприкладство",
+      "CustomDeck": {
+        "65": {
+          "FaceURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/card_images/slomannoe_rebro.png?v=1784535043",
+          "BackURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/back_images/back_trauma.png?v=1784535043",
+          "NumWidth": 1,
+          "NumHeight": 1,
+          "BackIsHidden": true,
+          "UniqueBack": false
+        },
+        "66": {
+          "FaceURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/card_images/grust.png?v=1784535043",
+          "BackURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/back_images/back_trauma.png?v=1784535043",
+          "NumWidth": 1,
+          "NumHeight": 1,
+          "BackIsHidden": true,
+          "UniqueBack": false
+        },
+        "67": {
+          "FaceURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/card_images/golovokrujene.png?v=1784535043",
+          "BackURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/back_images/back_trauma.png?v=1784535043",
+          "NumWidth": 1,
+          "NumHeight": 1,
+          "BackIsHidden": true,
+          "UniqueBack": false
+        },
+        "68": {
+          "FaceURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/card_images/obida.png?v=1784535043",
+          "BackURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/back_images/back_trauma.png?v=1784535043",
+          "NumWidth": 1,
+          "NumHeight": 1,
+          "BackIsHidden": true,
+          "UniqueBack": false
+        },
+        "69": {
+          "FaceURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/card_images/ischerpanie.png?v=1784535043",
+          "BackURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/back_images/back_trauma.png?v=1784535043",
+          "NumWidth": 1,
+          "NumHeight": 1,
+          "BackIsHidden": true,
+          "UniqueBack": false
+        },
+        "70": {
+          "FaceURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/card_images/pyanstvo.png?v=1784535043",
+          "BackURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/back_images/back_trauma.png?v=1784535043",
+          "NumWidth": 1,
+          "NumHeight": 1,
+          "BackIsHidden": true,
+          "UniqueBack": false
+        },
+        "71": {
+          "FaceURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/card_images/rukoprikladstvo.png?v=1784535043",
+          "BackURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/back_images/back_trauma.png?v=1784535043",
+          "NumWidth": 1,
+          "NumHeight": 1,
+          "BackIsHidden": true,
+          "UniqueBack": false
+        }
+      },
+      "DeckIDs": [
+        6500,
+        6600,
+        6700,
+        6800,
+        6900,
+        7000,
+        7100
+      ],
+      "ContainedObjects": [
+        {
+          "GUID": "963B21F3801C",
+          "Name": "Card",
+          "CardID": 6500,
+          "Nickname": "Сломанное ребро",
+          "Description": "-1 К следующей серии",
+          "XML": "",
+          "LuaScript": "",
+          "Transform": {}
+        },
+        {
+          "GUID": "49E9B2EC6809",
+          "Name": "Card",
+          "CardID": 6600,
+          "Nickname": "Грусть",
+          "Description": "Сбросьте две верхние карты",
+          "XML": "",
+          "LuaScript": "",
+          "Transform": {}
+        },
+        {
+          "GUID": "B677AB90DE24",
+          "Name": "Card",
+          "CardID": 6700,
+          "Nickname": "Головокружение",
+          "Description": "-1 усилие мозгов (максимальное и текущее)",
+          "XML": "",
+          "LuaScript": "",
+          "Transform": {}
+        },
+        {
+          "GUID": "25607162BDAB",
+          "Name": "Card",
+          "CardID": 6800,
+          "Nickname": "Обида",
+          "Description": "+1 к следующей серии врага",
+          "XML": "",
+          "LuaScript": "",
+          "Transform": {}
+        },
+        {
+          "GUID": "607521BA84C4",
+          "Name": "Card",
+          "CardID": 6900,
+          "Nickname": "Истощение",
+          "Description": "Замешайте 2 карты усталости в колоду",
+          "XML": "",
+          "LuaScript": "",
+          "Transform": {}
+        },
+        {
+          "GUID": "880897B4BA43",
+          "Name": "Card",
+          "CardID": 7000,
+          "Nickname": "Пьянство",
+          "Description": "связанное с междудрачьем",
+          "XML": "",
+          "LuaScript": "",
+          "Transform": {}
+        },
+        {
+          "GUID": "0664DE997964",
+          "Name": "Card",
+          "CardID": 7100,
+          "Nickname": "Рукоприкладство",
+          "Description": "Нанесите 1 ранение оруженосцу",
+          "XML": "",
+          "LuaScript": "",
+          "Transform": {}
+        }
+      ]
+    },
+    {
+      "GUID": "E904051224DE",
+      "Name": "CustomToken",
+      "Transform": {
+        "posX": 0,
+        "posY": 1,
+        "posZ": -2,
+        "rotX": 0,
+        "rotY": 180,
+        "rotZ": 180,
+        "scaleX": 1.5,
+        "scaleY": 1,
+        "scaleZ": 1.5
+      },
+      "Nickname": "Жетон слабака",
+      "Description": "Сбросьте жетон чтобы сбросить 1 травму.",
+      "CustomToken": {
+        "FaceURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/back_images/token_slabak.png?v=1784535043",
+        "BackURL": "https://raw.githubusercontent.com/greatsquirrel/idiots_and_swords/main/back_images/token_slabak.png?v=1784535043",
+        "BackIsHidden": true
+      },
+      "States": {}
+    }
+  ],
+  "LuaScript": "-- ============================================\n-- ГЛОБАЛЬНЫЙ СКРИПТ — Medieval Duel\n-- Только логика, без UI\n-- ============================================\n\n-- Состояние игры (доступно из Controller)\ngameState = {\n    phase = \"setup\",\n    round = 0,\n    currentPlayer = 1,\n    players = {}\n}\n\n-- ============================================\n-- ИНИЦИАЛИЗАЦИЯ\n-- ============================================\n\nfunction onLoad(script_state)\n    if script_state and script_state ~= \"\" then\n        local state = JSON.decode(script_state)\n        if state then\n            gameState = state\n        end\n    end\n    broadcastToAll(\"=== Medieval Duel загружен ===\")\nend\n\nfunction onSave()\n    return JSON.encode(gameState)\nend\n\n-- ============================================\n-- ВСПОМОГАТЕЛЬНЫЕ ФУНКЦИИ\n-- ============================================\n\nfunction getPlayerCount()\n    return #getSeatedPlayers()\nend\n\nfunction getPlayerState(color)\n    return gameState.players[color]\nend\n\nfunction isAttack(cardName)\n    local attacks = {\"Удар\", \"Сокрушение\", \"Чары\", \"Укол\", \"Казнь\", \"Подсечка\", \"Комбо\", \"Укус\", \"Удар Грааля\", \"Подчинение\"}\n    for _, name in ipairs(attacks) do\n        if name == cardName then return true end\n    end\n    return false\nend\n\nfunction isDefense(cardName)\n    local defenses = {\"Блок\", \"Парирование\", \"Концентрация\", \"Барьер\", \"Уход в тень\"}\n    for _, name in ipairs(defenses) do\n        if name == cardName then return true end\n    end\n    return false\nend\n\nfunction isTechnique(cardName)\n    local techniques = {\"Уклонение\", \"Финт\", \"Отход\", \"Подлость\", \"Допинг\", \"Вспышка\", \"Насмешка\",\n                        \"Милость божья\", \"Шторм\"}\n    for _, name in ipairs(techniques) do\n        if name == cardName then return true end\n    end\n    return false\nend\n",
+  "LuaScriptState": ""
+}
